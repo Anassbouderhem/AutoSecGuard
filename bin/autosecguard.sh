@@ -13,6 +13,12 @@ while getopts "l:h" opt; do
             show_help
             exit 0
             ;;
+        a)
+            bash "$(dirname "$0")/../src/security/scan_active.sh"
+            ;;
+        r)
+            sudo bash "$(dirname "$0")/../src/security/restore.sh"
+            ;;
         *)
             echo "Invalid option"
             show_help
