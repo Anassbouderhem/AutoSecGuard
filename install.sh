@@ -3,7 +3,7 @@
 echo "🔧 Initialisation d'AutoSecGuard..."
 
 # 1. Créer les dossiers nécessaires
-mkdir -p var/backup var/checksums src/security/logs
+mkdir -p var/backups/{system,checksums,process_snapshots}
 
 # 2. Donner les permissions d’exécution
 chmod +x src/security/*.sh

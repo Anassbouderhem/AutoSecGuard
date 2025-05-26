@@ -1,52 +1,43 @@
 #!/bin/bash
-# Répertoire et fichier de logs
+# AutoSecGuard - Gestion des Modes d'Exécution v2.0
+
+### Configuration ###
 LOG_DIR="/var/log/autosecguard"
-mkdir -p "$LOG_DIR" || { echo "Erreur : Impossible de créer $LOG_DIR (permission refusée)"; exit 1; }
+mkdir -p "$LOG_DIR" || { echo "Erreur : Impossible de créer $LOG_DIR (permission refusée)" >&2; exit 1; }
 LOG_FILE="$LOG_DIR/history.log"
 
-source /src/interface/logging.sh
+### Chargement des dépendances ###
+source ../src/interface/logging.sh || exit 1
 
-
-error() {
-    local code="$1"
-    shift
-    local temps
-    temps="$(date '+%Y-%m-%d-%H-%M-%S')"
-    local username
-    username="$(whoami)"
-    local message="$*"
-    local hostname
-    hostname="$(hostname -s)"
-    echo "$temps : $hostname : -autosecguard- : $username : ERROR : $message" | tee -a "$LOG_FILE"
-    exit "$code"
-}
-
+### Fonctions d'Exécution ###
 # mode fork
-mode_fork(){
+mode_fork() {
   local taches=("$@")
   local pids=()
   local status=0
+
   log "INFO" "Lancement mode Fork (${#taches[@]} taches)"
-  for tache in "${taches[@]}"; do (
-    eval "$tache" || exit $?
-    ) &
-    pids+=($!)           #$!: stocke le pid de la dérnière commande lancé en mode arriere plan     $?: stocke le code sortie de la dérnière commande executé      
+
+  # Lancer les tâches en arrière-plan
+  for tache in "${taches[@]}"; do
+    eval "$tache" &
+    pids+=($!)
   done
 
-  for pid in "${pids[@]}"; do (
+  # Attendre toutes les tâches sans sous-shell
+  for pid in "${pids[@]}"; do
     if ! wait "$pid"; then
-      status=1
       exit_code=$?
+      status=1
       log "ERROR" "Echec dans le fork PID $pid (Code : $exit_code)"
     fi
-  )
   done
 
-if [[ $status -eq 0 ]]; then
-  log "SUCCESS" "Mode Fork terminé sans erreur"
-else
-  log "ERROR" "Des erreurs sont survenues dans le mode Fork"
-fi  
+  if [[ $status -eq 0 ]]; then
+    log "SUCCESS" "Mode Fork terminé sans erreur"
+  else
+    log "ERROR" "Des erreurs sont survenues dans le mode Fork"
+  fi
 
   return $status
 }
@@ -103,14 +94,3 @@ mode_subshell() {
   return $status
 }
 
-control(){
-  case $1 in 
-    -f) mode_fork "${@:2}" ;;
-    -t) mode_thread "${@:2}" ;;
-    -s) mode_subshell "${@:2}" ;;
-    *)
-      log "ERROR" "Mode inconnu: $1"
-      return 1
-      ;;
-    esac
-}

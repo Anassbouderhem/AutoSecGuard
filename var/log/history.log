@@ -1,0 +1,105 @@
+2025-05-26-22-49-07 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : anass : Démarrage de AutoSecGuard v3.8
+2025-05-26-22-49-07 : LAPTOP-11IJD1K4 : -autosecguard- : PERFORMANCE : anass : Configuration - CPU:80% RAM:50% Action:none
+2025-05-26-22-49-07 : LAPTOP-11IJD1K4 : -autosecguard- : PERFORMANCE : anass : Lancement en mode ponctuel
+2025-05-26-22-49-07 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Scan en cours (Seuils: CPU>80% RAM>50% Action:)
+2025-05-26-22-49-07 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Démarrage du monitoring (Filtre: high, Rafraîchissement: 5s)
+2025-05-26-22-49-35 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Monitoring terminé
+2025-05-26-22-49-49 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : root : Démarrage de AutoSecGuard v3.8
+2025-05-26-22-49-49 : LAPTOP-11IJD1K4 : -autosecguard- : SECURITY : root : Lancement du module de sécurité
+2025-05-26-22-49-49 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : Lancement mode Thread (1 taches) (max 8 threads)
+2025-05-26-22-49-49 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : [THREAD] Démarrage de la surveillance active en continu...
+2025-05-26-22-55-36 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : root : Démarrage de AutoSecGuard v3.8
+2025-05-26-22-55-36 : LAPTOP-11IJD1K4 : -autosecguard- : SECURITY : root : Lancement du module de sécurité
+2025-05-26-22-55-36 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : Lancement mode Thread (1 taches) (max 8 threads)
+2025-05-26-22-55-36 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : [THREAD] Démarrage de la surveillance active en continu...
+2025-05-26-22-56-01 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : root : Démarrage de AutoSecGuard v3.8
+2025-05-26-22-56-01 : LAPTOP-11IJD1K4 : -autosecguard- : SECURITY : root : Lancement du module de sécurité
+2025-05-26-22-56-01 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : Lancement mode Thread (1 taches) (max 8 threads)
+2025-05-26-22-56-01 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : [THREAD] Démarrage de la surveillance active en continu...
+2025-05-26-22-59-36 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : anass : Démarrage de AutoSecGuard v3.8
+2025-05-26-22-59-36 : LAPTOP-11IJD1K4 : -autosecguard- : PERFORMANCE : anass : Configuration - CPU:80% RAM:50% Action:none
+2025-05-26-22-59-36 : LAPTOP-11IJD1K4 : -autosecguard- : PERFORMANCE : anass : Lancement en mode ponctuel
+2025-05-26-22-59-36 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Scan en cours (Seuils: CPU>80% RAM>50% Action:)
+2025-05-26-22-59-36 : LAPTOP-11IJD1K4 : -autosecguard- : WARNING : anass : Processus PID 499852 introuvable, snapshot non effectué
+2025-05-26-22-59-36 : LAPTOP-11IJD1K4 : -autosecguard- : WARNING : anass : Processus critique: PID 499852 (CPU: 100% CMD: awk...)
+2025-05-26-22-59-36 : LAPTOP-11IJD1K4 : -autosecguard- : WARNING : anass : Processus PID 499868 introuvable, snapshot non effectué
+2025-05-26-22-59-37 : LAPTOP-11IJD1K4 : -autosecguard- : WARNING : anass : Processus critique: PID 499868 (CPU: 100% CMD: ps...)
+2025-05-26-22-59-37 : LAPTOP-11IJD1K4 : -autosecguard- : WARNING : anass : Processus PID 499873 introuvable, snapshot non effectué
+2025-05-26-22-59-37 : LAPTOP-11IJD1K4 : -autosecguard- : WARNING : anass : Processus critique: PID 499873 (CPU: 100% CMD: ps...)
+2025-05-26-23-01-15 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : anass : Démarrage de AutoSecGuard v3.8
+2025-05-26-23-01-15 : LAPTOP-11IJD1K4 : -autosecguard- : PERFORMANCE : anass : Configuration - CPU:80% RAM:50% Action:none
+2025-05-26-23-01-15 : LAPTOP-11IJD1K4 : -autosecguard- : PERFORMANCE : anass : Lancement en mode ponctuel
+2025-05-26-23-01-15 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Scan en cours (Seuils: CPU>80% RAM>50% Action:)
+2025-05-26-23-01-15 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Démarrage du monitoring (Filtre: high, Rafraîchissement: 5s)
+2025-05-26-23-01-44 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Monitoring terminé
+2025-05-26-23-01-53 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : anass : Démarrage de AutoSecGuard v3.8
+2025-05-26-23-02-09 : LAPTOP-11IJD1K4 : -autosecguard- : ERROR : anass : Cette fonctionnalité nécessite les privilèges root
+2025-05-26-23-02-24 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : anass : Démarrage de AutoSecGuard v3.8
+2025-05-26-23-02-29 : LAPTOP-11IJD1K4 : -autosecguard- : ERROR : anass : Cette fonctionnalité nécessite les privilèges root
+2025-05-26-23-02-43 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : root : Démarrage de AutoSecGuard v3.8
+2025-05-26-23-02-49 : LAPTOP-11IJD1K4 : -autosecguard- : RESTORE : root : Lancement de la restauration système
+2025-05-26-23-03-20 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : root : Démarrage de AutoSecGuard v3.8
+2025-05-26-23-03-22 : LAPTOP-11IJD1K4 : -autosecguard- : RESTORE : root : Lancement de la restauration système
+2025-05-26-23-07-20 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : root : Démarrage de AutoSecGuard v3.8
+2025-05-26-23-07-20 : LAPTOP-11IJD1K4 : -autosecguard- : ERROR : root : Argument invalide : -help
+2025-05-26-23-10-01 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : anass : Démarrage de AutoSecGuard 
+2025-05-26-23-10-01 : LAPTOP-11IJD1K4 : -autosecguard- : PERFORMANCE : anass : Configuration - CPU:80% RAM:50% Action:none
+2025-05-26-23-10-01 : LAPTOP-11IJD1K4 : -autosecguard- : PERFORMANCE : anass : Lancement en mode ponctuel
+2025-05-26-23-10-01 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Scan en cours (Seuils: CPU>80% RAM>50% Action:)
+2025-05-26-23-10-01 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Démarrage du monitoring (Filtre: high, Rafraîchissement: 5s)
+2025-05-26-23-10-06 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Monitoring terminé
+2025-05-26-23-16-53 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : anass : Démarrage de AutoSecGuard 
+2025-05-26-23-16-53 : LAPTOP-11IJD1K4 : -autosecguard- : PERFORMANCE : anass : Configuration - CPU:80% RAM:50% Action:none
+2025-05-26-23-16-53 : LAPTOP-11IJD1K4 : -autosecguard- : PERFORMANCE : anass : Lancement en mode ponctuel
+2025-05-26-23-16-53 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Scan en cours (Seuils: CPU>80% RAM>50% Action:)
+2025-05-26-23-16-53 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Démarrage du monitoring (Filtre: high, Rafraîchissement: 5s)
+2025-05-26-23-17-04 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Monitoring terminé
+2025-05-26-23-17-24 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : root : Démarrage de AutoSecGuard 
+2025-05-26-23-17-24 : LAPTOP-11IJD1K4 : -autosecguard- : SECURITY : root : Lancement du module de sécurité
+2025-05-26-23-17-24 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : Lancement mode Thread (1 taches) (max 8 threads)
+2025-05-26-23-17-24 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : [THREAD] Démarrage de la surveillance active en continu...
+2025-05-26-23-23-21 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : anass : Démarrage de AutoSecGuard 
+2025-05-26-23-23-21 : LAPTOP-11IJD1K4 : -autosecguard- : PERFORMANCE : anass : Configuration - CPU:80% RAM:50% Action:none
+2025-05-26-23-23-21 : LAPTOP-11IJD1K4 : -autosecguard- : PERFORMANCE : anass : Lancement en mode ponctuel
+2025-05-26-23-23-21 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Scan en cours (Seuils: CPU>80% RAM>50% Action:)
+2025-05-26-23-23-21 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Démarrage du monitoring (Filtre: high, Rafraîchissement: 5s)
+2025-05-26-23-23-23 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Monitoring terminé
+2025-05-26-23-23-30 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : anass : Démarrage de AutoSecGuard 
+2025-05-26-23-23-30 : LAPTOP-11IJD1K4 : -autosecguard- : ERROR : anass : Cette fonctionnalité nécessite les privilèges root
+2025-05-26-23-23-56 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : root : Démarrage de AutoSecGuard 
+2025-05-26-23-23-56 : LAPTOP-11IJD1K4 : -autosecguard- : SECURITY : root : Lancement du module de sécurité
+2025-05-26-23-23-56 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : Lancement mode Thread (1 taches) (max 8 threads)
+2025-05-26-23-23-56 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : [THREAD] Démarrage de la surveillance active en continu...
+2025-05-26-23-33-38 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : anass : Démarrage de AutoSecGuard 
+2025-05-26-23-33-38 : LAPTOP-11IJD1K4 : -autosecguard- : ERROR : anass : Cette fonctionnalité nécessite les privilèges root
+2025-05-26-23-33-48 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : anass : Démarrage de AutoSecGuard 
+2025-05-26-23-33-48 : LAPTOP-11IJD1K4 : -autosecguard- : PERFORMANCE : anass : Configuration - CPU:80% RAM:50% Action:none
+2025-05-26-23-33-48 : LAPTOP-11IJD1K4 : -autosecguard- : PERFORMANCE : anass : Lancement en mode ponctuel
+2025-05-26-23-33-48 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Scan en cours (Seuils: CPU>80% RAM>50% Action:)
+2025-05-26-23-33-48 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Démarrage du monitoring (Filtre: high, Rafraîchissement: 5s)
+2025-05-26-23-34-12 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : anass : Monitoring terminé
+2025-05-26-23-34-27 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : root : Démarrage de AutoSecGuard 
+2025-05-26-23-34-27 : LAPTOP-11IJD1K4 : -autosecguard- : SECURITY : root : Lancement du module de sécurité
+2025-05-26-23-34-27 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : Lancement mode Thread (1 taches) (max 8 threads)
+2025-05-26-23-34-27 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : [THREAD] Démarrage de la surveillance active en continu...
+2025-05-26-23-35-29 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : [THREAD] Mon May 26 23:35:29 CEST 2025: Modification détectée sur /var/log/auth.log
+2025-05-26-23-39-28 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : root : Démarrage de AutoSecGuard 
+2025-05-26-23-39-28 : LAPTOP-11IJD1K4 : -autosecguard- : SECURITY : root : Lancement du module de sécurité
+2025-05-26-23-39-28 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : Lancement mode Thread (1 taches) (max 8 threads)
+2025-05-26-23-39-28 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : [THREAD] Démarrage de la surveillance active en continu...
+2025-05-26-23-40-23 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : root : Démarrage de AutoSecGuard 
+2025-05-26-23-40-23 : LAPTOP-11IJD1K4 : -autosecguard- : RESTORE : root : Lancement de la restauration système
+2025-05-26-23-42-08 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : root : Démarrage de AutoSecGuard 
+2025-05-26-23-42-08 : LAPTOP-11IJD1K4 : -autosecguard- : RESTORE : root : Lancement de la restauration système
+2025-05-26-23-43-27 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : root : Démarrage de AutoSecGuard 
+2025-05-26-23-43-27 : LAPTOP-11IJD1K4 : -autosecguard- : RESTORE : root : Lancement de la restauration système
+2025-05-26-23-44-44 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : root : Démarrage de AutoSecGuard 
+2025-05-26-23-44-44 : LAPTOP-11IJD1K4 : -autosecguard- : RESTORE : root : Lancement de la restauration système
+2025-05-26-23-45-24 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : root : Démarrage de AutoSecGuard 
+2025-05-26-23-45-54 : LAPTOP-11IJD1K4 : -autosecguard- : PERFORMANCE : root : Configuration - CPU:10% RAM:5% Action:kill
+2025-05-26-23-45-54 : LAPTOP-11IJD1K4 : -autosecguard- : PERFORMANCE : root : Lancement en mode ponctuel
+2025-05-26-23-45-54 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : Scan en cours (Seuils: CPU>10% RAM>5% Action:kill)
+2025-05-26-23-46-28 : LAPTOP-11IJD1K4 : -autosecguard- : SYSTEM : root : Démarrage de AutoSecGuard 
+2025-05-26-23-46-38 : LAPTOP-11IJD1K4 : -autosecguard- : SECURITY : root : Lancement du module de sécurité
+2025-05-26-23-46-38 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : Lancement mode Thread (1 taches) (max 8 threads)
+2025-05-26-23-46-38 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : [THREAD] Démarrage de la surveillance active en continu...

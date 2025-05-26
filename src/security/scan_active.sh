@@ -2,15 +2,15 @@
 
 # Ce script fait une surveillance active en continu avec vérifications périodiques
 
-FILES=("/etc/passwd" "/etc/shadow" "/var/log/auth.log")
-BACKUP_DIR="./var/backups"
-CHECKSUM_DIR="./var/checksums"
-LOGFILE="./var/security_access.log"
+# Chemins relatifs à la racine du projet
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+LOGFILE="$BASE_DIR/var/log/security_access.log"
 
-# Création des dossiers si nécessaire
-mkdir -p "$BACKUP_DIR" "$CHECKSUM_DIR"
-touch "$LOGFILE"
-
+# Création du dossier log 
+mkdir -p "$(dirname "$LOGFILE")" || {
+    echo "ERREUR: Impossible de créer le dossier log" >&2
+    exit 1
+}
 # Fonction pour calculer hash
 function generate_checksums() {
     for file in "${FILES[@]}"; do
