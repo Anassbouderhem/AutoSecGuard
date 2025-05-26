@@ -2,7 +2,7 @@
 
 # Default project log dir
 log_dir="../var/log"
-mkdir -p "$log_dir"  # ✅ Ensure directory exists
+mkdir -p "$log_dir"  #  Ensure directory exists
 log_file="$log_dir/autosecguard.log"
 
 # --- [2] Allow overriding the log directory via -l ---
@@ -15,16 +15,19 @@ set_log_dir() {
 }
 
 # --- [3] Log message function ---
-log_message() {
-    local level="$1"
-    local message="$2"
-    local timestamp
-    timestamp=$(date '+%Y-%m-%d-%H-%M-%S')
-    local user="$USER"
-    echo "$timestamp : $user : $level : $message" >> "$log_file"
+log() {
+ local level=$1; shift
+  local temps
+  temps="$(date '+%Y-%m-%d-%H-%M-%S')"
+  local username
+  username="$(whoami)"
+  local hostname
+  hostname="$(hostname -s)"
+  local message="$*"
+  echo "$temps : $hostname : -autosecguard- : $level : $username : $message" | tee -a "$log_file"
 }
 
-# --- [4] Help display ---
+# ---  Help display ---
 show_help() {
     echo "Usage: ./autosecguard [options]"
     echo ""
