@@ -1,10 +1,12 @@
 #!/bin/bash
 
-# Load logging functions
+# Charger les fonctions de journalisation
 source ../src/interface/logging.sh
 
-# Parse options
-while getopts "l:h" opt; do
+verbose=false  # Mode verbeux désactivé par défaut
+
+# Analyse des options
+while getopts "l:harv" opt; do
     case $opt in
         l)
             set_log_dir "$OPTARG"
@@ -13,6 +15,9 @@ while getopts "l:h" opt; do
             show_help
             exit 0
             ;;
+        v)
+            visualize_logs
+            ;;
         a)
             bash "$(dirname "$0")/../src/security/scan_active.sh"
             ;;
@@ -20,11 +25,9 @@ while getopts "l:h" opt; do
             sudo bash "$(dirname "$0")/../src/security/restore.sh"
             ;;
         *)
-            echo "Invalid option"
+            echo "Option invalide"
             show_help
             exit 1
             ;;
     esac
 done
-
-log_message "TEST" "hello world"
