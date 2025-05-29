@@ -1,53 +1,61 @@
 #!/bin/bash
 
-# Ce script fait une surveillance active en continu avec vérifications périodiques
+# Surveillance active avec arrêt automatique après un nombre limité d'itérations
+source ./src/interface/logging.sh
 
-# Chemins relatifs à la racine du projet
-BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-LOGFILE="$BASE_DIR/var/log/security_access.log"
+FILES=("/etc/passwd" "/etc/shadow" "/var/log/auth.log")
+BACKUP_DIR="./var/backups"
+CHECKSUM_DIR="./var/checksums"
+LOGFILE="./var/log/history.log"
 
-# Création du dossier log 
+# Création des dossiers nécessaires
+mkdir -p "$BACKUP_DIR"
+mkdir -p "$CHECKSUM_DIR"
 mkdir -p "$(dirname "$LOGFILE")" || {
     echo "ERREUR: Impossible de créer le dossier log" >&2
     exit 1
 }
-# Fonction pour calculer hash
+
+# Générer les checksums de référence
 function generate_checksums() {
     for file in "${FILES[@]}"; do
         if [ -f "$file" ]; then
-            sha256sum "$file" > "$CHECKSUM_DIR/$(basename $file).sha256"
+            sha256sum "$file" > "$CHECKSUM_DIR/$(basename "$file").sha256"
         fi
     done
 }
 
-# Fonction de surveillance intégrée : check modifications + log accès simples
+# Vérifier modifications et journaliser accès
 function monitor_files() {
     for file in "${FILES[@]}"; do
         if [ -f "$file" ]; then
             current_hash=$(sha256sum "$file" | awk '{print $1}')
-            saved_hash=$(cat "$CHECKSUM_DIR/$(basename $file).sha256" 2>/dev/null | awk '{print $1}')
+            saved_hash=$(cat "$CHECKSUM_DIR/$(basename "$file").sha256" 2>/dev/null | awk '{print $1}')
 
-            # Check modification
             if [[ "$current_hash" != "$saved_hash" ]]; then
-                echo "$(date): Modification détectée sur $file" | tee -a "$LOGFILE"
-                cp "$file" "$BACKUP_DIR/$(basename $file).bak"
-                sha256sum "$file" > "$CHECKSUM_DIR/$(basename $file).sha256"
+                log "$(date): Modification détectée sur $file" | tee -a "$LOGFILE"
+                cp "$file" "$BACKUP_DIR/$(basename "$file").bak"
+                sha256sum "$file" > "$CHECKSUM_DIR/$(basename "$file").sha256"
             fi
 
-            # Log dernier accès
             last_access=$(stat -c %X "$file")
-            echo "$(date): Dernier accès à $file : $last_access" >> "$LOGFILE"
+            log "$(date): Dernier accès à $file : $last_access" >> "$LOGFILE"
         fi
     done
 }
 
-echo "Démarrage de la surveillance active en continu..."
+# ---------- Exécution automatique ----------
 
-# Générer les checksums au début
+echo "Démarrage de la surveillance active (automatisée)..."
 generate_checksums
 
-# Boucle infinie de surveillance toutes les 60 secondes (modifiable)
-while true; do
+MAX_ITER=5       # Nombre d'itérations
+SLEEP_DURATION=5 # Pause entre chaque itération (secondes)
+
+for ((i=1; i<=MAX_ITER; i++)); do
+    echo "--- Vérification $i / $MAX_ITER ---"
     monitor_files
-    sleep 60
+    sleep "$SLEEP_DURATION"
 done
+
+echo "Surveillance terminée automatiquement après $MAX_ITER vérifications."

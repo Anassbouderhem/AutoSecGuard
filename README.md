@@ -1,6 +1,10 @@
 # AutoSecGuard
 Script Bash intelligent de protection et surveillance du système Linux.
 
+pour executer cet script il faut run this in terminal : sudo bash bin/accueil.sh
+il faut installer ces biblio pour linux : je sais pas est ce il fonctionne pour windows:
+--sudo apt install figlet
+--sudo apt install lolcat
 
 
 
@@ -15,3 +19,4 @@ Script Bash intelligent de protection et surveillance du système Linux.
 - Membre 3 - Interface, Log & Documentation :
 - Ajouter une option de visualisation des logs sous forme structurée (exemple : affichage filtré par date/type d’erreur).
 - Rendre l’aide -h plus dynamique avec des sous-sections pour une meilleure lisibilité.
+

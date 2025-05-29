@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Appel des fonctions de logging
+source ./src/interface/logging.sh
+
 # Fichiers sensibles à surveiller
 FILES=("/etc/passwd" "/etc/shadow" "/var/log/auth.log")
 
@@ -12,7 +15,7 @@ mkdir -p "$BACKUP_DIR"
 mkdir -p "$CHECKSUM_DIR"
 
 # Fichier log local pour accès/modifications (à simplifier pour la démo)
-LOGFILE="./var/security_access.log"
+LOGFILE="./var/log/history.log"
 touch "$LOGFILE"
 
 # Fonction pour calculer hash et sauvegarder dans checksum dir
@@ -40,7 +43,7 @@ function check_integrity() {
             current_hash=$(sha256sum "$file" | awk '{print $1}')
             saved_hash=$(cat "$CHECKSUM_DIR/$(basename $file).sha256" 2>/dev/null | awk '{print $1}')
             if [[ "$current_hash" != "$saved_hash" ]]; then
-                echo "$(date): ALERTE - Modification détectée sur $file" | tee -a "$LOGFILE"
+                log "ALERTE" "Modification détectée sur $file"
                 # Optionnel : sauvegarder backup avant modification (ou après)
                 cp "$file" "$BACKUP_DIR/$(basename $file).bak"
                 # Mettre à jour checksum

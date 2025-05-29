@@ -1,6 +1,11 @@
 #!/bin/bash
 # AutoSecGuard - Main Control Script v3.8
 
+clear
+
+
+# ... le reste de ton script ...
+
 
 ### Configuration ###
 PROJECT_ROOT="$(dirname "$(realpath "$0")")/.."
@@ -164,54 +169,68 @@ parse_arguments() {
     fi
 }
 
+
 ### Mode interactif ###
 interactive_mode() {
-    PS3="Choisissez un mode d'exécution : "
-    select exec_mode in "Fork" "Thread" "Subshell" "Quitter"; do
-        case $REPLY in
-            1) mode="mode_fork"; break ;;
-            2) mode="mode_thread"; break ;;
-            3) mode="mode_subshell"; break ;;
-            4) exit 0 ;;
-            *) echo "Option invalide" ;;
-        esac
-    done
+    while true; do
+        echo -e "\n===== Menu AutoSecGuard ====="
+        echo "h) Afficher l'aide"
+        echo "r) Restauration système (root)"
+        echo "a) Scan actif (root)"
+        echo "c) Vérification d'intégrité (hash)"
+        echo "s) Surveillance continue (root)"
+        echo "p) Performance (CPU/RAM/Processus)"
+        echo "m) Mode interactif avancé"
+        echo "q) Quitter"
+        echo "============================="
+        read -p "Votre choix : " choice
 
-    PS3="Choisissez une fonctionnalité : "
-    select feature in "Sécurité" "Performance" "Restauration" "Quitter"; do
-        case $REPLY in
-            1) run_security "$mode"; break ;;
-            2) 
-                read -p "Seuil CPU (%): " cpu
-                read -p "Seuil RAM (%): " ram
-                read -p "Mode auto? (y/n): " auto
-                read -p "Action (kill/renice/none): " action
-                read -p "Granularité (low/high/critical): " granularity
-                read -p "Intervalle de rafraîchissement (s): " refresh
-                
-                if [[ "$auto" =~ ^[yY] ]]; then
-                    run_performance "$mode" \
-                        --cpu-seuil "${cpu:-80}" \
-                        --ram-seuil "${ram:-50}" \
-                        --auto \
-                        --action "${action:-none}" \
-                        --granularity "${granularity:-high}" \
-                        --refresh "${refresh:-5}"
-                else
-                    run_performance "$mode" \
-                        --cpu-seuil "${cpu:-80}" \
-                        --ram-seuil "${ram:-50}" \
-                        --action "${action:-none}" \
-                        --granularity "${granularity:-high}" \
-                        --refresh "${refresh:-5}"
-                fi
-                break ;;
-            3) run_restore; break ;;
-            4) exit 0 ;;
-            *) echo "Option invalide" ;;
+        case "$choice" in
+            h|H) 
+                echo "Affichage de l'aide..."
+                show_help 
+                ;;
+            r|R) 
+                echo "Lancement de la restauration système..."
+                run_restore 
+                ;;
+            a|A) 
+                echo "Lancement du scan actif..."
+                run_security "mode_thread" 
+                ;;
+            c|C) 
+                echo "Lancement de la vérification d'intégrité..."
+                "$PROJECT_ROOT/src/security/hash_check.sh" 
+                ;;
+            s|S) 
+                echo "Lancement de la surveillance continue en arrière-plan..."
+                "$PROJECT_ROOT/src/security/surveillance.sh" &
+                ;;
+                p|P) 
+            read -p "Seuil CPU (%): " cpu
+            read -p "Seuil RAM (%): " ram
+            echo "Lancement du monitoring performance en arrière-plan..."
+            run_performance "mode_thread" \
+                --cpu-seuil "${cpu:-80}" \
+                --ram-seuil "${ram:-50}" &
+            echo "Le monitoring tourne en arrière-plan avec PID $!"
+            ;;
+
+            m|M) 
+                echo "Lancement du mode interactif avancé..."
+                "$PROJECT_ROOT/src/modes/modes_exe.sh" 
+                ;;
+            q|Q) 
+                echo "Fermeture de AutoSecGuard"
+                exit 0
+                ;;
+            *) 
+                echo "Option invalide"
+                ;;
         esac
     done
 }
+
 
 ### Entrée principale ###
 main() {

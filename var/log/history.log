@@ -103,3 +103,139 @@
 2025-05-26-23-46-38 : LAPTOP-11IJD1K4 : -autosecguard- : SECURITY : root : Lancement du module de sécurité
 2025-05-26-23-46-38 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : Lancement mode Thread (1 taches) (max 8 threads)
 2025-05-26-23-46-38 : LAPTOP-11IJD1K4 : -autosecguard- : INFO : root : [THREAD] Démarrage de la surveillance active en continu...
+----- Lancement de la surveillance à Wed May 28 10:12:08 PM +01 2025 -----
+Wed May 28 10:12:08 PM +01 2025: Dernier accès à /etc/passwd : 1748464089
+Wed May 28 10:12:08 PM +01 2025: Dernier accès à /etc/shadow : 1748464089
+Wed May 28 10:12:08 PM +01 2025: Dernier accès à /var/log/auth.log : 1748466728
+2025-05-28-22-14-41 : HP-EliteBook : -autosecguard- : Wed May 28 10:14:41 PM +01 2025: Dernier accès à /etc/passwd : 1748464089 : root : 
+2025-05-28-22-14-41 : HP-EliteBook : -autosecguard- : Wed May 28 10:14:41 PM +01 2025: Dernier accès à /etc/shadow : 1748464089 : root : 
+2025-05-28-22-14-41 : HP-EliteBook : -autosecguard- : Wed May 28 10:14:41 PM +01 2025: Dernier accès à /var/log/auth.log : 1748466881 : root : 
+2025-05-28-22-14-46 : HP-EliteBook : -autosecguard- : Wed May 28 10:14:46 PM +01 2025: Dernier accès à /etc/passwd : 1748464089 : root : 
+2025-05-28-22-14-46 : HP-EliteBook : -autosecguard- : Wed May 28 10:14:46 PM +01 2025: Dernier accès à /etc/shadow : 1748464089 : root : 
+2025-05-28-22-14-46 : HP-EliteBook : -autosecguard- : Wed May 28 10:14:46 PM +01 2025: Dernier accès à /var/log/auth.log : 1748466881 : root : 
+2025-05-28-22-14-51 : HP-EliteBook : -autosecguard- : Wed May 28 10:14:51 PM +01 2025: Dernier accès à /etc/passwd : 1748464089 : root : 
+2025-05-28-22-14-51 : HP-EliteBook : -autosecguard- : Wed May 28 10:14:51 PM +01 2025: Dernier accès à /etc/shadow : 1748464089 : root : 
+2025-05-28-22-14-51 : HP-EliteBook : -autosecguard- : Wed May 28 10:14:51 PM +01 2025: Dernier accès à /var/log/auth.log : 1748466881 : root : 
+2025-05-28-22-14-56 : HP-EliteBook : -autosecguard- : Wed May 28 10:14:56 PM +01 2025: Dernier accès à /etc/passwd : 1748464089 : root : 
+2025-05-28-22-14-56 : HP-EliteBook : -autosecguard- : Wed May 28 10:14:56 PM +01 2025: Dernier accès à /etc/shadow : 1748464089 : root : 
+2025-05-28-22-14-56 : HP-EliteBook : -autosecguard- : Wed May 28 10:14:56 PM +01 2025: Dernier accès à /var/log/auth.log : 1748466881 : root : 
+2025-05-28-22-15-01 : HP-EliteBook : -autosecguard- : Wed May 28 10:15:01 PM +01 2025: Dernier accès à /etc/passwd : 1748464089 : root : 
+2025-05-28-22-15-01 : HP-EliteBook : -autosecguard- : Wed May 28 10:15:01 PM +01 2025: Dernier accès à /etc/shadow : 1748464089 : root : 
+2025-05-28-22-15-01 : HP-EliteBook : -autosecguard- : Wed May 28 10:15:01 PM +01 2025: Modification détectée sur /var/log/auth.log : root : 
+2025-05-28-22-15-01 : HP-EliteBook : -autosecguard- : Wed May 28 10:15:01 PM +01 2025: Dernier accès à /var/log/auth.log : 1748466901 : root : 
+----- Lancement de la surveillance à Wed May 28 11:17:34 PM +01 2025 -----
+Wed May 28 11:17:35 PM +01 2025: Dernier accès à /etc/passwd : 1748466962
+Wed May 28 11:17:35 PM +01 2025: Dernier accès à /etc/shadow : 1748466962
+Wed May 28 11:17:35 PM +01 2025: Dernier accès à /var/log/auth.log : 1748470655
+----- Lancement de la surveillance à Wed May 28 11:17:44 PM +01 2025 -----
+Wed May 28 11:17:44 PM +01 2025: Dernier accès à /etc/passwd : 1748466962
+Wed May 28 11:17:44 PM +01 2025: Dernier accès à /etc/shadow : 1748466962
+Wed May 28 11:17:44 PM +01 2025: Dernier accès à /var/log/auth.log : 1748470655
+----- Lancement de la surveillance à Wed May 28 11:18:15 PM +01 2025 -----
+Wed May 28 11:18:15 PM +01 2025: Dernier accès à /etc/passwd : 1748470682
+Wed May 28 11:18:15 PM +01 2025: Dernier accès à /etc/shadow : 1748470682
+Wed May 28 11:18:15 PM +01 2025: Dernier accès à /var/log/auth.log : 1748470695
+----- Lancement de la surveillance à Wed May 28 11:18:46 PM +01 2025 -----
+Wed May 28 11:18:46 PM +01 2025: Dernier accès à /etc/passwd : 1748470682
+Wed May 28 11:18:46 PM +01 2025: Dernier accès à /etc/shadow : 1748470682
+Wed May 28 11:18:46 PM +01 2025: Dernier accès à /var/log/auth.log : 1748470726
+----- Lancement de la surveillance à Wed May 28 11:19:37 PM +01 2025 -----
+Wed May 28 11:19:37 PM +01 2025: Dernier accès à /etc/passwd : 1748470682
+Wed May 28 11:19:37 PM +01 2025: Dernier accès à /etc/shadow : 1748470682
+Wed May 28 11:19:37 PM +01 2025: Dernier accès à /var/log/auth.log : 1748470777
+----- Lancement de la surveillance à Wed May 28 11:20:19 PM +01 2025 -----
+Wed May 28 11:20:19 PM +01 2025: Dernier accès à /etc/passwd : 1748470682
+Wed May 28 11:20:19 PM +01 2025: Dernier accès à /etc/shadow : 1748470682
+Wed May 28 11:20:19 PM +01 2025: Dernier accès à /var/log/auth.log : 1748470819
+2025-05-28-23-20-41 : HP-EliteBook : -autosecguard- : Wed May 28 11:20:41 PM +01 2025: Dernier accès à /etc/passwd : 1748470839 : root : 
+2025-05-28-23-20-41 : HP-EliteBook : -autosecguard- : Wed May 28 11:20:41 PM +01 2025: Dernier accès à /etc/shadow : 1748470839 : root : 
+2025-05-28-23-20-41 : HP-EliteBook : -autosecguard- : Wed May 28 11:20:41 PM +01 2025: Dernier accès à /var/log/auth.log : 1748470841 : root : 
+2025-05-28-23-20-46 : HP-EliteBook : -autosecguard- : Wed May 28 11:20:46 PM +01 2025: Dernier accès à /etc/passwd : 1748470839 : root : 
+2025-05-28-23-20-46 : HP-EliteBook : -autosecguard- : Wed May 28 11:20:46 PM +01 2025: Dernier accès à /etc/shadow : 1748470839 : root : 
+2025-05-28-23-20-46 : HP-EliteBook : -autosecguard- : Wed May 28 11:20:46 PM +01 2025: Dernier accès à /var/log/auth.log : 1748470841 : root : 
+2025-05-28-23-20-51 : HP-EliteBook : -autosecguard- : Wed May 28 11:20:51 PM +01 2025: Dernier accès à /etc/passwd : 1748470839 : root : 
+2025-05-28-23-20-51 : HP-EliteBook : -autosecguard- : Wed May 28 11:20:51 PM +01 2025: Dernier accès à /etc/shadow : 1748470839 : root : 
+2025-05-28-23-20-51 : HP-EliteBook : -autosecguard- : Wed May 28 11:20:51 PM +01 2025: Dernier accès à /var/log/auth.log : 1748470841 : root : 
+2025-05-28-23-20-56 : HP-EliteBook : -autosecguard- : Wed May 28 11:20:56 PM +01 2025: Dernier accès à /etc/passwd : 1748470839 : root : 
+2025-05-28-23-20-56 : HP-EliteBook : -autosecguard- : Wed May 28 11:20:56 PM +01 2025: Dernier accès à /etc/shadow : 1748470839 : root : 
+2025-05-28-23-20-56 : HP-EliteBook : -autosecguard- : Wed May 28 11:20:56 PM +01 2025: Dernier accès à /var/log/auth.log : 1748470841 : root : 
+2025-05-28-23-21-01 : HP-EliteBook : -autosecguard- : Wed May 28 11:21:01 PM +01 2025: Dernier accès à /etc/passwd : 1748470839 : root : 
+2025-05-28-23-21-01 : HP-EliteBook : -autosecguard- : Wed May 28 11:21:01 PM +01 2025: Dernier accès à /etc/shadow : 1748470839 : root : 
+2025-05-28-23-21-01 : HP-EliteBook : -autosecguard- : Wed May 28 11:21:01 PM +01 2025: Dernier accès à /var/log/auth.log : 1748470841 : root : 
+----- Lancement de la surveillance à Wed May 28 11:21:06 PM +01 2025 -----
+Wed May 28 11:21:06 PM +01 2025: Dernier accès à /etc/passwd : 1748470839
+Wed May 28 11:21:06 PM +01 2025: Dernier accès à /etc/shadow : 1748470839
+Wed May 28 11:21:06 PM +01 2025: Dernier accès à /var/log/auth.log : 1748470841
+----- Lancement de la surveillance à Wed May 28 11:21:30 PM +01 2025 -----
+Wed May 28 11:21:31 PM +01 2025: Dernier accès à /etc/passwd : 1748470839
+Wed May 28 11:21:31 PM +01 2025: Dernier accès à /etc/shadow : 1748470839
+Wed May 28 11:21:31 PM +01 2025: Dernier accès à /var/log/auth.log : 1748470841
+2025-05-28-23-30-32 : HP-EliteBook : -autosecguard- : Wed May 28 11:30:32 PM +01 2025: Dernier accès à /etc/passwd : 1748471429 : root : 
+2025-05-28-23-30-33 : HP-EliteBook : -autosecguard- : Wed May 28 11:30:32 PM +01 2025: Dernier accès à /etc/shadow : 1748471429 : root : 
+2025-05-28-23-30-33 : HP-EliteBook : -autosecguard- : Wed May 28 11:30:33 PM +01 2025: Dernier accès à /var/log/auth.log : 1748471432 : root : 
+2025-05-28-23-30-38 : HP-EliteBook : -autosecguard- : Wed May 28 11:30:38 PM +01 2025: Dernier accès à /etc/passwd : 1748471429 : root : 
+2025-05-28-23-30-38 : HP-EliteBook : -autosecguard- : Wed May 28 11:30:38 PM +01 2025: Dernier accès à /etc/shadow : 1748471429 : root : 
+2025-05-28-23-30-38 : HP-EliteBook : -autosecguard- : Wed May 28 11:30:38 PM +01 2025: Dernier accès à /var/log/auth.log : 1748471432 : root : 
+2025-05-28-23-30-43 : HP-EliteBook : -autosecguard- : Wed May 28 11:30:43 PM +01 2025: Dernier accès à /etc/passwd : 1748471429 : root : 
+2025-05-28-23-30-43 : HP-EliteBook : -autosecguard- : Wed May 28 11:30:43 PM +01 2025: Dernier accès à /etc/shadow : 1748471429 : root : 
+2025-05-28-23-30-43 : HP-EliteBook : -autosecguard- : Wed May 28 11:30:43 PM +01 2025: Dernier accès à /var/log/auth.log : 1748471432 : root : 
+2025-05-28-23-30-48 : HP-EliteBook : -autosecguard- : Wed May 28 11:30:48 PM +01 2025: Dernier accès à /etc/passwd : 1748471429 : root : 
+2025-05-28-23-30-48 : HP-EliteBook : -autosecguard- : Wed May 28 11:30:48 PM +01 2025: Dernier accès à /etc/shadow : 1748471429 : root : 
+2025-05-28-23-30-48 : HP-EliteBook : -autosecguard- : Wed May 28 11:30:48 PM +01 2025: Dernier accès à /var/log/auth.log : 1748471432 : root : 
+2025-05-28-23-30-53 : HP-EliteBook : -autosecguard- : Wed May 28 11:30:53 PM +01 2025: Dernier accès à /etc/passwd : 1748471429 : root : 
+2025-05-28-23-30-53 : HP-EliteBook : -autosecguard- : Wed May 28 11:30:53 PM +01 2025: Dernier accès à /etc/shadow : 1748471429 : root : 
+2025-05-28-23-30-53 : HP-EliteBook : -autosecguard- : Wed May 28 11:30:53 PM +01 2025: Dernier accès à /var/log/auth.log : 1748471432 : root : 
+----- Lancement de la surveillance à Wed May 28 11:30:58 PM +01 2025 -----
+Wed May 28 11:30:58 PM +01 2025: Dernier accès à /etc/passwd : 1748471429
+Wed May 28 11:30:58 PM +01 2025: Dernier accès à /etc/shadow : 1748471429
+Wed May 28 11:30:58 PM +01 2025: Dernier accès à /var/log/auth.log : 1748471432
+----- Lancement de la surveillance à Wed May 28 11:31:13 PM +01 2025 -----
+Wed May 28 11:31:13 PM +01 2025: Dernier accès à /etc/passwd : 1748471429
+Wed May 28 11:31:13 PM +01 2025: Dernier accès à /etc/shadow : 1748471429
+Wed May 28 11:31:13 PM +01 2025: Dernier accès à /var/log/auth.log : 1748471432
+2025-05-28-23-37-27 : HP-EliteBook : -autosecguard- : Wed May 28 11:37:27 PM +01 2025: Dernier accès à /etc/passwd : 1748471842 : root : 
+2025-05-28-23-37-27 : HP-EliteBook : -autosecguard- : Wed May 28 11:37:27 PM +01 2025: Dernier accès à /etc/shadow : 1748471842 : root : 
+2025-05-28-23-37-27 : HP-EliteBook : -autosecguard- : Wed May 28 11:37:27 PM +01 2025: Dernier accès à /var/log/auth.log : 1748471847 : root : 
+2025-05-28-23-37-32 : HP-EliteBook : -autosecguard- : Wed May 28 11:37:32 PM +01 2025: Dernier accès à /etc/passwd : 1748471842 : root : 
+2025-05-28-23-37-32 : HP-EliteBook : -autosecguard- : Wed May 28 11:37:32 PM +01 2025: Dernier accès à /etc/shadow : 1748471842 : root : 
+2025-05-28-23-37-32 : HP-EliteBook : -autosecguard- : Wed May 28 11:37:32 PM +01 2025: Dernier accès à /var/log/auth.log : 1748471847 : root : 
+2025-05-28-23-37-37 : HP-EliteBook : -autosecguard- : Wed May 28 11:37:37 PM +01 2025: Dernier accès à /etc/passwd : 1748471842 : root : 
+2025-05-28-23-37-37 : HP-EliteBook : -autosecguard- : Wed May 28 11:37:37 PM +01 2025: Dernier accès à /etc/shadow : 1748471842 : root : 
+2025-05-28-23-37-37 : HP-EliteBook : -autosecguard- : Wed May 28 11:37:37 PM +01 2025: Dernier accès à /var/log/auth.log : 1748471847 : root : 
+2025-05-28-23-37-42 : HP-EliteBook : -autosecguard- : Wed May 28 11:37:42 PM +01 2025: Dernier accès à /etc/passwd : 1748471842 : root : 
+2025-05-28-23-37-42 : HP-EliteBook : -autosecguard- : Wed May 28 11:37:42 PM +01 2025: Dernier accès à /etc/shadow : 1748471842 : root : 
+2025-05-28-23-37-42 : HP-EliteBook : -autosecguard- : Wed May 28 11:37:42 PM +01 2025: Dernier accès à /var/log/auth.log : 1748471847 : root : 
+2025-05-28-23-37-47 : HP-EliteBook : -autosecguard- : Wed May 28 11:37:47 PM +01 2025: Dernier accès à /etc/passwd : 1748471842 : root : 
+2025-05-28-23-37-47 : HP-EliteBook : -autosecguard- : Wed May 28 11:37:47 PM +01 2025: Dernier accès à /etc/shadow : 1748471842 : root : 
+2025-05-28-23-37-47 : HP-EliteBook : -autosecguard- : Wed May 28 11:37:47 PM +01 2025: Dernier accès à /var/log/auth.log : 1748471847 : root : 
+----- Lancement de la surveillance à Wed May 28 11:37:53 PM +01 2025 -----
+Wed May 28 11:37:53 PM +01 2025: Dernier accès à /etc/passwd : 1748471842
+Wed May 28 11:37:53 PM +01 2025: Dernier accès à /etc/shadow : 1748471842
+Wed May 28 11:37:53 PM +01 2025: Dernier accès à /var/log/auth.log : 1748471847
+----- Lancement de la surveillance à Wed May 28 11:38:02 PM +01 2025 -----
+Wed May 28 11:38:02 PM +01 2025: Dernier accès à /etc/passwd : 1748471842
+Wed May 28 11:38:02 PM +01 2025: Dernier accès à /etc/shadow : 1748471842
+Wed May 28 11:38:02 PM +01 2025: Dernier accès à /var/log/auth.log : 1748471847
+2025-05-29-00-32-18 : HP-EliteBook : -autosecguard- : Thu May 29 12:32:18 AM +01 2025: Dernier accès à /etc/passwd : 1748475133 : root : 
+2025-05-29-00-32-18 : HP-EliteBook : -autosecguard- : Thu May 29 12:32:18 AM +01 2025: Dernier accès à /etc/shadow : 1748475133 : root : 
+2025-05-29-00-32-18 : HP-EliteBook : -autosecguard- : Thu May 29 12:32:18 AM +01 2025: Dernier accès à /var/log/auth.log : 1748475138 : root : 
+2025-05-29-00-32-23 : HP-EliteBook : -autosecguard- : Thu May 29 12:32:23 AM +01 2025: Dernier accès à /etc/passwd : 1748475133 : root : 
+2025-05-29-00-32-23 : HP-EliteBook : -autosecguard- : Thu May 29 12:32:23 AM +01 2025: Dernier accès à /etc/shadow : 1748475133 : root : 
+2025-05-29-00-32-23 : HP-EliteBook : -autosecguard- : Thu May 29 12:32:23 AM +01 2025: Dernier accès à /var/log/auth.log : 1748475138 : root : 
+2025-05-29-00-32-28 : HP-EliteBook : -autosecguard- : Thu May 29 12:32:28 AM +01 2025: Dernier accès à /etc/passwd : 1748475133 : root : 
+2025-05-29-00-32-28 : HP-EliteBook : -autosecguard- : Thu May 29 12:32:28 AM +01 2025: Dernier accès à /etc/shadow : 1748475133 : root : 
+2025-05-29-00-32-28 : HP-EliteBook : -autosecguard- : Thu May 29 12:32:28 AM +01 2025: Dernier accès à /var/log/auth.log : 1748475138 : root : 
+2025-05-29-00-32-33 : HP-EliteBook : -autosecguard- : Thu May 29 12:32:33 AM +01 2025: Dernier accès à /etc/passwd : 1748475133 : root : 
+2025-05-29-00-32-33 : HP-EliteBook : -autosecguard- : Thu May 29 12:32:33 AM +01 2025: Dernier accès à /etc/shadow : 1748475133 : root : 
+2025-05-29-00-32-33 : HP-EliteBook : -autosecguard- : Thu May 29 12:32:33 AM +01 2025: Dernier accès à /var/log/auth.log : 1748475138 : root : 
+2025-05-29-00-32-38 : HP-EliteBook : -autosecguard- : Thu May 29 12:32:38 AM +01 2025: Dernier accès à /etc/passwd : 1748475133 : root : 
+2025-05-29-00-32-38 : HP-EliteBook : -autosecguard- : Thu May 29 12:32:38 AM +01 2025: Dernier accès à /etc/shadow : 1748475133 : root : 
+2025-05-29-00-32-38 : HP-EliteBook : -autosecguard- : Thu May 29 12:32:38 AM +01 2025: Dernier accès à /var/log/auth.log : 1748475138 : root : 
+----- Lancement de la surveillance à Thu May 29 12:32:43 AM +01 2025 -----
+Thu May 29 12:32:43 AM +01 2025: Dernier accès à /etc/passwd : 1748475133
+Thu May 29 12:32:43 AM +01 2025: Dernier accès à /etc/shadow : 1748475133
+Thu May 29 12:32:43 AM +01 2025: Dernier accès à /var/log/auth.log : 1748475138
+----- Lancement de la surveillance à Thu May 29 12:32:54 AM +01 2025 -----
+Thu May 29 12:32:54 AM +01 2025: Dernier accès à /etc/passwd : 1748475133
+Thu May 29 12:32:54 AM +01 2025: Dernier accès à /etc/shadow : 1748475133
+Thu May 29 12:32:54 AM +01 2025: Dernier accès à /var/log/auth.log : 1748475138

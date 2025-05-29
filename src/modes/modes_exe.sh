@@ -7,7 +7,9 @@ mkdir -p "$LOG_DIR" || { echo "Erreur : Impossible de créer $LOG_DIR (permissio
 LOG_FILE="$LOG_DIR/history.log"
 
 ### Chargement des dépendances ###
-source ../src/interface/logging.sh || exit 1
+PROJECT_ROOT="$(dirname "$(dirname "$(realpath "$0")")")"
+source "$PROJECT_ROOT/src/interface/logging.sh"
+
 
 ### Fonctions d'Exécution ###
 # mode fork
