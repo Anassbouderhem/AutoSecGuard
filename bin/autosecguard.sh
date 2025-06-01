@@ -140,23 +140,29 @@ stop_system() {
         if kill -0 "$main_pid" 2>/dev/null; then
             kill -TERM "$main_pid"
             local waited=0
+            # Attendre que le processus principal s'arrête
             while kill -0 "$main_pid" 2>/dev/null ; do
                 sleep 1
                 ((waited++))
+                # Optionnel : timeout pour éviter une boucle infinie
+                [[ $waited -ge 15 ]] && break
             done
+            # Si le processus est toujours vivant, forcer l'arrêt
             if kill -0 "$main_pid" 2>/dev/null; then
                 kill -KILL "$main_pid"
-                log "WARNING" "Arrêt forcé du processus $main_pid"
+                log "WARNING" "Arrêt forcé du processus $main_pid après $waited secondes"
             fi
             rm -f "$PID_FILE"
-                log "INFO" "Système arrêté"
+            log "INFO" "Système arrêté"
             echo "Système arrêté"
         else
             rm -f "$PID_FILE"
+            log "INFO" "Aucun processus actif trouvé"
             echo "Aucun processus actif trouvé"
         fi
     else
         touch "$STOP_FILE"
+        log "INFO" "Signal d'arrêt envoyé, veuillez patienter..."
         echo "Signal d'arrêt envoyé, veuillez patienter..."
     fi
 }
@@ -197,7 +203,7 @@ run_performance() {
         esac
     done
     log "PERFORMANCE" "Configuration - CPU:${cpu_seuil}% RAM:${ram_seuil}% Action:${action:-none}"
-    PERF_LOG="$LOG_DIR/performance_$(date +%Y%m%d).log"
+    PERF_LOG="$(dirname "$log_file")/performance_$(date +%Y%m%d).log"    
     if $auto_mode; then
         check_root || return 1
         log "PERFORMANCE" "Lancement en mode surveillance continue"
