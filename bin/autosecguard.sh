@@ -1,19 +1,44 @@
 #!/bin/bash
-# AutoSecGuard - Main Control Script v3.8
-
-clear
-
-
-# ... le reste de ton script ...
-
 
 ### Configuration ###
 PROJECT_ROOT="$(dirname "$(realpath "$0")")/.."
 LOG_DIR="/var/log/autosecguard"
+PID_FILE="/var/run/autosecguard.pid"
 mkdir -p "$LOG_DIR" || { echo "Erreur : Impossible de créer $LOG_DIR" >&2; exit 1; }
 LOG_FILE="$LOG_DIR/autosecguard_$(date +%Y%m%d).log"
+STOP_FILE="$PROJECT_ROOT/var/stop_signal"
 
-### Vérification root pour certaines fonctionnalités ###
+### Initialisation ###
+init() {
+    mkdir -p "$PROJECT_ROOT/var" || {
+        log "ERROR" "Impossible de créer $PROJECT_ROOT/var"
+        exit 1
+    }
+    rm -f "$STOP_FILE"
+}
+
+### Gestion des signaux ###
+setup_signal_handlers() {
+    trap 'handle_exit_signal SIGINT' SIGINT
+    trap 'handle_exit_signal SIGTERM' SIGTERM
+    trap 'handle_exit_signal SIGHUP' SIGHUP
+}
+
+handle_exit_signal() {
+    local signal=$1
+    log "INFO" "Signal $signal reçu, arrêt en cours..."
+    cleanup
+    exit 0
+}
+
+### Nettoyage ###
+cleanup() {
+    rm -f "$STOP_FILE" "$PID_FILE"
+    pkill -P $$ 2>/dev/null
+    log "INFO" "Nettoyage terminé, arrêt du système"
+}
+
+### Vérification root ###
 check_root() {
     if [[ $EUID -ne 0 ]]; then
         log "ERROR" "Cette fonctionnalité nécessite les privilèges root"
@@ -22,13 +47,25 @@ check_root() {
 }
 
 ### Chargement des dépendances ###
-source "$PROJECT_ROOT/src/interface/logging.sh" || exit 1
-source "$PROJECT_ROOT/src/modes/modes_exe.sh" || exit 1
+load_dependencies() {
+    source "$PROJECT_ROOT/src/interface/logging.sh" || {
+        echo "Échec du chargement de logging.sh" >&2
+        exit 1
+    }
+    source "$PROJECT_ROOT/src/modes/modes_exe.sh" || {
+        log "ERROR" "Échec du chargement de modes_exe.sh"
+        exit 1
+    }
+    source "$PROJECT_ROOT/src/interface/interactive.sh" || {
+        log "ERROR" "Échec du chargement de interactive.sh"
+        exit 1
+    }
+}
 
 ### Aide ###
 show_help() {
     cat << EOF
-AutoSecGuard - Système intégré de sécurité et performance
+AutoSecGuard - Système intégré de sécurité et performance v4.0
 
 Usage: $0 [MODE] [FONCTIONNALITÉ] [OPTIONS]
 
@@ -39,38 +76,94 @@ Modes d'exécution:
 
 Fonctionnalités principales:
   -sec, --security       Scan actif + surveillance (nécessite root)
-  -p, --performance    Monitoring CPU/RAM/Processus
-  -R, --restore        Restauration système (nécessite root)
+  -p, --performance      Monitoring CPU/RAM/Processus
+  -R, --restore          Restauration système (nécessite root)
+  --stop                 Arrêt propre du système
 
 Options performance:
-  --cpu-seuil XX   Définir le seuil CPU (défaut: 80)
-  --ram-seuil XX   Définir le seuil RAM (défaut: 50)
-  --auto           Mode surveillance continue
-  --granularity    Niveau de détail (low|high|critical)
-  --refresh        Intervalle de rafraîchissement (secondes)
-  --action         Actions sur processus (kill|renice)
+  --cpu-seuil XX         Définir le seuil CPU (défaut: 80)
+  --ram-seuil XX         Définir le seuil RAM (défaut: 50)
+  --auto                 Mode surveillance continue
+  --granularity          Niveau de détail (low|high|critical)
+  --refresh              Intervalle de rafraîchissement (secondes)
+  --action               Actions sur processus (kill|renice)
+
+Méthodes d'arrêt:
+  1. $0 --stop
+  2. touch $STOP_FILE
+  3. kill -TERM [PID]
 
 Exemples:
   sudo $0 -f --security
   $0 --performance --cpu-seuil 90 --auto --action kill
-  $0 --performance --granularity high --refresh 10
-  sudo $0 --restore
+  sudo $0 --stop
 EOF
 }
 
-### Fonctions de modules ###
+### Vérifier le signal d'arrêt ###
+check_stop_signal() {
+    [[ -f "$STOP_FILE" ]]
+}
+
+### Gestion du PID ###
+manage_pid() {
+    case "$1" in
+        create)
+            echo $$ > "$PID_FILE"
+            ;;
+        remove)
+            rm -f "$PID_FILE"
+            ;;
+        check)
+            if [[ -f "$PID_FILE" ]]; then
+                local old_pid
+                old_pid=$(cat "$PID_FILE")
+                if ps -p "$old_pid" > /dev/null; then
+                    log "WARNING" "Un processus est déjà en cours (PID: $old_pid)"
+                    return 1
+                else
+                    rm -f "$PID_FILE"
+                fi
+            fi
+            ;;
+    esac
+}
+
+### Fonction d'arrêt ###
+stop_system() {
+    if [[ -f "$PID_FILE" ]]; then
+        local main_pid
+        main_pid=$(cat "$PID_FILE")
+        if kill -0 "$main_pid" 2>/dev/null; then
+            kill -TERM "$main_pid"
+            local waited=0
+            while kill -0 "$main_pid" 2>/dev/null ; do
+                sleep 1
+                ((waited++))
+            done
+            if kill -0 "$main_pid" 2>/dev/null; then
+                kill -KILL "$main_pid"
+                log "WARNING" "Arrêt forcé du processus $main_pid"
+            fi
+            rm -f "$PID_FILE"
+                log "INFO" "Système arrêté"
+            echo "Système arrêté"
+        else
+            rm -f "$PID_FILE"
+            echo "Aucun processus actif trouvé"
+        fi
+    else
+        touch "$STOP_FILE"
+        echo "Signal d'arrêt envoyé, veuillez patienter..."
+    fi
+}
+
+### Modules ###
 run_security() {
     check_root || return 1
     log "SECURITY" "Lancement du module de sécurité"
-    
-    # Configurer le fichier de log de sécurité
     SECURITY_LOG="$LOG_DIR/security_access.log"
-    touch "$SECURITY_LOG" || {
-        log "ERROR" "Impossible de créer $SECURITY_LOG"
-        exit 1
-    }
-    chmod 600 "$SECURITY_LOG"
-
+    touch "$SECURITY_LOG" && chmod 600 "$SECURITY_LOG"
     local tasks=(
         "$PROJECT_ROOT/src/security/scan_active.sh --full --log $SECURITY_LOG"
         "$PROJECT_ROOT/src/security/surveillance.sh --daemon --log $SECURITY_LOG"
@@ -89,9 +182,6 @@ run_performance() {
     local granularity="high"
     local refresh=5
     local action=""
-    local args=()
-
-    # Analyse des options spécifiques
     while [[ $# -gt 0 ]]; do
         case "$1" in
             --cpu-seuil) cpu_seuil=$2; shift 2 ;;
@@ -100,21 +190,31 @@ run_performance() {
             --granularity) granularity=$2; shift 2 ;;
             --refresh) refresh=$2; shift 2 ;;
             --action) action=$2; shift 2 ;;
-            *) args+=("$1"); shift ;;
+            *) shift ;;
         esac
     done
-
     log "PERFORMANCE" "Configuration - CPU:${cpu_seuil}% RAM:${ram_seuil}% Action:${action:-none}"
     PERF_LOG="$LOG_DIR/performance_$(date +%Y%m%d).log"
-    
     if $auto_mode; then
-        # Mode automatique (démon)
         check_root || return 1
         log "PERFORMANCE" "Lancement en mode surveillance continue"
-        "$PROJECT_ROOT/src/performance/process_manager.sh" --auto "$cpu_seuil" "$ram_seuil" "$action" --log "$PERF_LOG" &
-        "$PROJECT_ROOT/src/performance/resources_monitor.sh" -g "$granularity" -r "$refresh" --log "$PERF_LOG" &
+        rm -f "$STOP_FILE"
+        manage_pid create
+        (
+            while ! check_stop_signal; do
+                "$PROJECT_ROOT/src/performance/process_manager.sh" --seuil "${cpu_seuil}:${ram_seuil}" "$action"
+                sleep "$refresh"
+            done
+        ) >> "$PERF_LOG" 2>&1 &
+        (
+            while ! check_stop_signal; do
+                "$PROJECT_ROOT/src/performance/resources_monitor.sh" -g "$granularity"
+                sleep "$refresh"
+            done
+        ) >> "$PERF_LOG" 2>&1 &
+        log "INFO" "Surveillance en cours. PID: $$"
+        log "INFO" "Pour arrêter: '$0 --stop' ou 'touch $STOP_FILE'"
     else
-        # Mode ponctuel
         log "PERFORMANCE" "Lancement en mode ponctuel"
         "$PROJECT_ROOT/src/performance/process_manager.sh" --seuil "${cpu_seuil}:${ram_seuil}" "$action"
         "$PROJECT_ROOT/src/performance/resources_monitor.sh" -g "$granularity" -r "$refresh"
@@ -134,108 +234,57 @@ run_restore() {
 parse_arguments() {
     local mode="mode_thread"
     local feature_set=false
-
+    manage_pid check || exit 1
+    for arg in "$@"; do
+        if [[ "$arg" == "--stop" ]]; then
+            stop_system
+            exit $?
+        fi
+    done
+    for ((i=0; i<$#; i++)); do
+        case "${!i}" in
+            -f|--fork) mode="mode_fork"; unset "ARGV[$i]" ;;
+            -t|--thread) mode="mode_thread"; unset "ARGV[$i]" ;;
+            -s|--subshell) mode="mode_subshell"; unset "ARGV[$i]" ;;
+        esac
+    done
     while [[ $# -gt 0 ]]; do
         case "$1" in
-            -f|--fork) mode="mode_fork"; shift ;;
-            -t|--thread) mode="mode_thread"; shift ;;
-            -s|--subshell) mode="mode_subshell"; shift ;;
-            -sec|--security) 
+            -sec|--security)
                 run_security "$mode"
                 feature_set=true
-                shift ;;
-            -p|--performance) 
+                ;;
+            -p|--performance)
                 shift
                 run_performance "$mode" "$@"
                 feature_set=true
                 return 0
                 ;;
-            -R|--restore) 
+            -R|--restore)
                 run_restore
                 feature_set=true
-                shift ;;
-            -h|--help) 
+                ;;
+            -h|--help)
                 show_help
-                exit 0 ;;
-            *) 
-                log "ERROR" "Argument invalide : $1"
+                exit 0
+                ;;
+            *)
+                log "ERROR" "Option invalide: $1"
                 show_help
-                exit 1 ;;
+                exit 1
+                ;;
         esac
+        shift
     done
-
     if ! $feature_set; then
-        interactive_mode
+        log "ERROR" "Aucune fonctionnalité sélectionnée"
+        show_help
+        exit 1
     fi
 }
 
-
-### Mode interactif ###
-interactive_mode() {
-    while true; do
-        echo -e "\n===== Menu AutoSecGuard ====="
-        echo "h) Afficher l'aide"
-        echo "r) Restauration système (root)"
-        echo "a) Scan actif (root)"
-        echo "c) Vérification d'intégrité (hash)"
-        echo "s) Surveillance continue (root)"
-        echo "p) Performance (CPU/RAM/Processus)"
-        echo "m) Mode interactif avancé"
-        echo "q) Quitter"
-        echo "============================="
-        read -p "Votre choix : " choice
-
-        case "$choice" in
-            h|H) 
-                echo "Affichage de l'aide..."
-                show_help 
-                ;;
-            r|R) 
-                echo "Lancement de la restauration système..."
-                run_restore 
-                ;;
-            a|A) 
-                echo "Lancement du scan actif..."
-                run_security "mode_thread" 
-                ;;
-            c|C) 
-                echo "Lancement de la vérification d'intégrité..."
-                "$PROJECT_ROOT/src/security/hash_check.sh" 
-                ;;
-            s|S) 
-                echo "Lancement de la surveillance continue en arrière-plan..."
-                "$PROJECT_ROOT/src/security/surveillance.sh" &
-                ;;
-                p|P) 
-            read -p "Seuil CPU (%): " cpu
-            read -p "Seuil RAM (%): " ram
-            echo "Lancement du monitoring performance en arrière-plan..."
-            run_performance "mode_thread" \
-                --cpu-seuil "${cpu:-80}" \
-                --ram-seuil "${ram:-50}" &
-            echo "Le monitoring tourne en arrière-plan avec PID $!"
-            ;;
-
-            m|M) 
-                echo "Lancement du mode interactif avancé..."
-                "$PROJECT_ROOT/src/modes/modes_exe.sh" 
-                ;;
-            q|Q) 
-                echo "Fermeture de AutoSecGuard"
-                exit 0
-                ;;
-            *) 
-                echo "Option invalide"
-                ;;
-        esac
-    done
-}
-
-
-### Entrée principale ###
-main() {
-    log "SYSTEM" "Démarrage de AutoSecGuard "
-    parse_arguments "$@"
-}
-
-main "$@"
+### Lancement principal ###
+init
+load_dependencies
+setup_signal_handlers
+parse_arguments "$@"
