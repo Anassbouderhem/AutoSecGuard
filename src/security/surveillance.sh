@@ -1,75 +1,67 @@
 #!/bin/bash
 
-# Appel des fonctions de logging
-source ./src/interface/logging.sh
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+
+# Chargement de logging.sh 
+source "$BASE_DIR/src/interface/logging.sh" || {
+    echo "Erreur: Impossible de charger logging.sh" >&2
+    exit 1
+}
 
 # Fichiers sensibles à surveiller
 FILES=("/etc/passwd" "/etc/shadow" "/var/log/auth.log")
 
-# Dossiers de sauvegarde et checksum
-BACKUP_DIR="./var/backups"
-CHECKSUM_DIR="./var/checksums"
+# Dossiers basés sur BASE_DIR
+BACKUP_DIR="$BASE_DIR/var/backups"
+CHECKSUM_DIR="$BASE_DIR/var/checksums"
 
-# Création des dossiers s'ils n'existent pas
-mkdir -p "$BACKUP_DIR"
-mkdir -p "$CHECKSUM_DIR"
 
-# Fichier log local pour accès/modifications (à simplifier pour la démo)
-LOGFILE="./var/log/history.log"
-touch "$LOGFILE"
-
-# Fonction pour calculer hash et sauvegarder dans checksum dir
-function generate_checksums() {
+# Calcul des checksums
+generate_checksums() {
     for file in "${FILES[@]}"; do
         if [ -f "$file" ]; then
-            sha256sum "$file" > "$CHECKSUM_DIR/$(basename $file).sha256"
+            sha256sum "$file" > "$CHECKSUM_DIR/$(basename "$file").sha256"
         fi
     done
 }
 
-# Fonction pour sauvegarder les fichiers dans backup dir
-function backup_files() {
-    for file in "${FILES[@]}"; do
-        if [ -f "$file" ]; then
-            cp "$file" "$BACKUP_DIR/$(basename $file).bak"
-        fi
-    done
+# Sauvegarde horodatée
+backup_file() {
+    local file="$1"
+    local ts
+    ts=$(date '+%Y%m%d_%H%M%S')
+    cp "$file" "$BACKUP_DIR/$(basename "$file").$ts.bak"
 }
 
-# Fonction de surveillance simple : vérifier changements par comparaison hash
-function check_integrity() {
+# Vérification d'intégrité
+check_integrity() {
     for file in "${FILES[@]}"; do
         if [ -f "$file" ]; then
             current_hash=$(sha256sum "$file" | awk '{print $1}')
-            saved_hash=$(cat "$CHECKSUM_DIR/$(basename $file).sha256" 2>/dev/null | awk '{print $1}')
+            saved_hash=$(cat "$CHECKSUM_DIR/$(basename "$file").sha256" 2>/dev/null | awk '{print $1}')
             if [[ "$current_hash" != "$saved_hash" ]]; then
+                log " MODIFICATION" "Le fichier $file a été modifié"
+                backup_file "$file"
+                sha256sum "$file" > "$CHECKSUM_DIR/$(basename "$file").sha256"
                 log "ALERTE" "Modification détectée sur $file"
-                # Optionnel : sauvegarder backup avant modification (ou après)
-                cp "$file" "$BACKUP_DIR/$(basename $file).bak"
-                # Mettre à jour checksum
-                sha256sum "$file" > "$CHECKSUM_DIR/$(basename $file).sha256"
             fi
         fi
     done
 }
 
-# Fonction surveillance des accès (exemple simplifié via audit des accès)
-# Cette partie nécessite auditd ou un mécanisme avancé, ici on simule par last access time
-function monitor_access() {
+# Surveillance des accès
+monitor_access() {
     for file in "${FILES[@]}"; do
         if [ -f "$file" ]; then
-            last_access=$(stat -c %X "$file")
-            # On peut garder un historique simple dans un fichier, ici juste log simple
-            echo "$(date): Dernier accès à $file : $last_access" >> "$LOGFILE"
-            # Ici, on peut ajouter une logique pour détecter accès anormaux (fréquence, heures, utilisateurs)
+            last_access=$(stat -c '%x' "$file")
+            log "INFO" "$file accédé le $last_access"
         fi
     done
 }
 
 # MAIN
-
-echo "----- Lancement de la surveillance à $(date) -----" >> "$LOGFILE"
+log "\n=== Lancement de la surveillance : $(date '+%F %T') ==="
 generate_checksums
-backup_files
 check_integrity
 monitor_access
+log "---  Fin de vérification ---" 

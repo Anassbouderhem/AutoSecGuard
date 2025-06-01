@@ -1,13 +1,4 @@
 #!/bin/bash
-# Monitoring des ressources système - Version avec affichage stable
-
-# Configuration des logs
-LOG_DIR="/var/log/"
-mkdir -p "$LOG_DIR" || { 
-    echo "Erreur : Impossible de créer $LOG_DIR (permission refusée)" >&2
-    exit 1
-}
-LOG_FILE="$LOG_DIR/history.log"
 
 # Chargement des fonctions de logging
 source "../src/interface/logging.sh" || {
@@ -79,19 +70,11 @@ nettoyage() {
 filtre=""
 delai=5
 
-while getopts "g:r:h" opt; do
-    case $opt in
-        g) filtre="$OPTARG" ;;
-        r) delai="$OPTARG" ;;
-        h) 
-            echo -e "Syntaxe: $0 [-g <high|critical>] [-r <secondes>]\n"
-            echo "Options:"
-            echo "  -g <filtre>        Niveau de filtrage : 'high' ou 'critical'"
-            echo "  -r <secondes>      Fréquence de rafraîchissement (défaut: 5s)"
-            echo "  -h                 Affiche cette aide"
-            exit 0
-            ;;
-        *) error 100 "Option invalide: -$OPTARG" ;;
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        -g|--granularity) filtre="$2"; shift 2 ;;
+        -r|--refresh) delai="$2"; shift 2 ;;
+        *) error 102 "Option invalide: $1" ;;
     esac
 done
 

@@ -1,20 +1,22 @@
 #!/bin/bash
 
 # Surveillance active avec arrêt automatique après un nombre limité d'itérations
-source ./src/interface/logging.sh
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+
+# Chargement de logging.sh 
+source "$BASE_DIR/src/interface/logging.sh" || {
+    echo "Erreur: Impossible de charger logging.sh" >&2
+    exit 1
+}
 
 FILES=("/etc/passwd" "/etc/shadow" "/var/log/auth.log")
-BACKUP_DIR="./var/backups"
-CHECKSUM_DIR="./var/checksums"
-LOGFILE="./var/log/history.log"
+BACKUP_DIR="$BASE_DIR/var/backups"
+CHECKSUM_DIR="$BASE_DIR/var/checksums"
 
 # Création des dossiers nécessaires
 mkdir -p "$BACKUP_DIR"
 mkdir -p "$CHECKSUM_DIR"
-mkdir -p "$(dirname "$LOGFILE")" || {
-    echo "ERREUR: Impossible de créer le dossier log" >&2
-    exit 1
-}
+
 
 # Générer les checksums de référence
 function generate_checksums() {
@@ -33,13 +35,18 @@ function monitor_files() {
             saved_hash=$(cat "$CHECKSUM_DIR/$(basename "$file").sha256" 2>/dev/null | awk '{print $1}')
 
             if [[ "$current_hash" != "$saved_hash" ]]; then
-                log "$(date): Modification détectée sur $file" | tee -a "$LOGFILE"
-                cp "$file" "$BACKUP_DIR/$(basename "$file").bak"
+                log "ALERTE" "MODIFICATION détectée sur $file" 
+
+                # Sauvegarde horodatée
+                timestamp=$(date +"%Y%m%d_%H%M%S")
+                cp "$file" "$BACKUP_DIR/$(basename "$file").$timestamp.bak"
+
                 sha256sum "$file" > "$CHECKSUM_DIR/$(basename "$file").sha256"
             fi
 
             last_access=$(stat -c %X "$file")
-            log "$(date): Dernier accès à $file : $last_access" >> "$LOGFILE"
+            readable_access=$(date -d @"$last_access" '+%F %T')
+            log "INFO" "ACCÈS à $file → $readable_access" 
         fi
     done
 }

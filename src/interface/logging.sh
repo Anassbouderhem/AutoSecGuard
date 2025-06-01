@@ -1,17 +1,22 @@
 #!/bin/bash
 
 # Répertoire de journalisation par défaut du projet
-log_dir="../var/log"
-mkdir -p "$log_dir"  # S'assurer que le répertoire existe
-log_file="$log_dir/history.log"
+if [[ -n "$LOG_FILE" ]]; then
+    log_file="$LOG_FILE"
+else
+    log_dir="../var/log"
+    mkdir -p "$log_dir"
+    log_file="$log_dir/history.log"
+fi
 
 # --- [2] Permet de redéfinir le répertoire de logs via -l ---
 set_log_dir() {
     local raw_path="$1"
-    local expanded_path=$(eval echo "$raw_path")  # expansion de ~
+    local expanded_path=$(eval echo "$raw_path")
     log_dir="$expanded_path"
     mkdir -p "$log_dir"
     log_file="$log_dir/history.log"
+    export LOG_FILE="$log_file"
 }
 
 # --- [3] Fonction d'enregistrement des messages de log ---
@@ -37,8 +42,7 @@ error() {
     local message="$*"
     local hostname
     hostname="$(hostname -s)"
-    echo "$temps : $hostname : -autosecguard- : $username : ERROR : $message" | tee -a "$LOG_FILE"
-    
+    echo "$temps : $hostname : -autosecguard- : $username : ERROR : $message" | tee -a "$log_file"    
     case "$code" in
       126) echo "Erreur critique : Permission refusée pour une commande."; ;;
       127) echo "Erreur critique : Commande non trouvée."; ;;
@@ -47,14 +51,3 @@ error() {
     exit "$code"
 }
 
-# ---  Help display ---
-show_help() {
-    echo "Utilisation : ./autosecguard [options]"
-    echo ""
-    echo "[ Options générales ]"
-    echo "  -h                   Affiche ce message d'aide"
-    echo "  -l <répertoire>      Définir un répertoire de logs personnalisé (défaut : var/log)"
-    echo ""
-    echo "[ Format des journaux ]"
-    echo "  aaaa-mm-jj-hh-mm-ss : nom_utilisateur : INFOS/ERROR : message"
-}

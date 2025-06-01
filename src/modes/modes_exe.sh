@@ -1,10 +1,6 @@
 #!/bin/bash
-# AutoSecGuard - Gestion des Modes d'Exécution v2.0
 
-### Configuration ###
-LOG_DIR="/var/log/autosecguard"
-mkdir -p "$LOG_DIR" || { echo "Erreur : Impossible de créer $LOG_DIR (permission refusée)" >&2; exit 1; }
-LOG_FILE="$LOG_DIR/history.log"
+
 
 ### Chargement des dépendances ###
 PROJECT_ROOT="$(dirname "$(dirname "$(realpath "$0")")")"
@@ -22,7 +18,9 @@ mode_fork() {
 
   # Lancer les tâches en arrière-plan
   for tache in "${taches[@]}"; do
-    eval "$tache" &
+    eval "$tache" | while IFS= read -r ligne; do
+      log "INFO" "[FORK] $ligne"  # Modification: [THREAD] -> [FORK]
+    done &
     pids+=($!)
   done
 
@@ -82,7 +80,7 @@ mode_subshell() {
     set -o pipefail   # Active la gestion stricte des erreurs dans les pipelines pour détecter toute deffaillance
     trap 'log "ERROR"  "Erreur dans subshell: $BASH_COMMAND"' ERR  #jounaliser la commande qui a échoué
     eval "$tache" | while IFS= read -r ligne; do    # lancer l'éxecution 
-     log "INFO" "[THREAD] $ligne"
+     log "INFO" "[SUBSHELL] $ligne"  # Modification: [THREAD] -> [SUBSHELL]
       done  
   )
   (( status |= $? ))  # # Stocke l’erreur si au moins une commande echoue
@@ -95,4 +93,3 @@ mode_subshell() {
   fi
   return $status
 }
-
