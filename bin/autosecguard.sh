@@ -274,7 +274,7 @@ parse_arguments() {
                 break # On passe à la gestion des fonctionnalités
                 ;;
             *)
-                break
+                shift
                 ;;
         esac
     done
@@ -300,6 +300,11 @@ parse_arguments() {
                 show_help
                 exit 0
                 ;;
+
+            -l|--logdir|--fork|-f|-t|-t|--thread|-s|--subshell)
+                continue
+                ;;
+
             *)
                 log "ERROR" "Option invalide: $1"
                 show_help
@@ -320,6 +325,7 @@ parse_arguments() {
         exit 1
     fi
 }
+
 
 ### Lancement principal ###
 init
