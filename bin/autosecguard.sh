@@ -88,6 +88,9 @@ Options performance:
   --refresh              Intervalle de rafraîchissement (secondes)
   --action               Actions sur processus (kill|renice)
 
+  -l, --logdir <répertoire>  Changer le répertoire de journalisation (ex: -l ~/meslogs)
+
+
 Méthodes d'arrêt:
   1. $0 --stop
   2. touch $STOP_FILE
@@ -231,23 +234,46 @@ run_restore() {
 }
 
 ### Analyse des arguments ###
+
 parse_arguments() {
     local mode="mode_thread"
     local feature_set=false
     manage_pid check || exit 1
-    for arg in "$@"; do
-        if [[ "$arg" == "--stop" ]]; then
-            stop_system
-            exit $?
-        fi
-    done
-    for ((i=0; i<$#; i++)); do
-        case "${!i}" in
-            -f|--fork) mode="mode_fork"; unset "ARGV[$i]" ;;
-            -t|--thread) mode="mode_thread"; unset "ARGV[$i]" ;;
-            -s|--subshell) mode="mode_subshell"; unset "ARGV[$i]" ;;
+
+    # Prétraitement des options globales (dont -l)
+    while [[ $# -gt 0 ]]; do
+        case "$1" in
+            -f|--fork) mode="mode_fork"; shift ;;
+            -t|--thread) mode="mode_thread"; shift ;;
+            -s|--subshell) mode="mode_subshell"; shift ;;
+            -l|--logdir)
+                if [[ -n "$2" ]]; then
+                    set_log_dir "$2"
+                    shift 2
+                else
+                    log "ERROR" "Le répertoire de log doit être spécifié après -l/--logdir"
+                    show_help
+                    exit 101
+                fi
+                ;;
+            --stop)
+                stop_system
+                exit $?
+                ;;
+            -h|--help)
+                show_help
+                exit 0
+                ;;
+            -sec|--security|-p|--performance|-R|--restore)
+                break # On passe à la gestion des fonctionnalités
+                ;;
+            *)
+                break
+                ;;
         esac
     done
+
+    # Gestion des fonctionnalités
     while [[ $# -gt 0 ]]; do
         case "$1" in
             -sec|--security)
@@ -271,11 +297,12 @@ parse_arguments() {
             *)
                 log "ERROR" "Option invalide: $1"
                 show_help
-                exit 1
+                exit 100
                 ;;
         esac
         shift
     done
+
     if ! $feature_set; then
         log "ERROR" "Aucune fonctionnalité sélectionnée"
         show_help
