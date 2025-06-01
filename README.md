@@ -1,22 +1,79 @@
-# AutoSecGuard
-Script Bash intelligent de protection et surveillance du système Linux.
+# AutoSecGuard - Système de Sécurité et Performance Linux
 
-pour executer cet script il faut run this in terminal : sudo bash bin/accueil.sh
-il faut installer ces biblio pour linux : je sais pas est ce il fonctionne pour windows:
---sudo apt install figlet
---sudo apt install lolcat
+## Description
+
+**AutoSecGuard** est un système intégré de **surveillance**, de **sécurité** et de **gestion des performances** pour les systèmes Linux. Il a pour objectifs principaux :
+
+-  Surveiller et protéger les **fichiers système critiques**
+-  Monitorer les **performances système** (CPU / RAM)
+-  Gérer et neutraliser les **processus trop gourmands**
+-  Restaurer automatiquement le système après un incident
+-  Générer des **logs et rapports détaillés**
+
+## Fonctionnalités
+
+- **Surveillance de l’intégrité** : Calcul et vérification des checksums SHA256 des fichiers critiques
+- **Monitoring système** : Utilisation de `ps`, `top` et `awk` pour suivre la charge CPU et mémoire
+- **Gestion des processus** : Identification et arrêt automatique des processus excessifs
+- **Restauration post-incident** : Récupération depuis des backups
+- **Rapports et journaux** :
+  - `history.log` : journal centralisé des événements
+  - `integrity_report.csv` : état de l'intégrité des fichiers
+  - `var/checksums/*.sha256` : fichiers de hachage
+  - `backups/` : répertoires de sauvegarde
+
+## Dépendances
+
+Le système nécessite les outils suivants :
+
+- `bash` – Shell de script principal
+- `coreutils` – Pour `sha256sum`, `date`, etc.
+- `procps` – Pour `ps`, `top`, etc.
+- `awk` – Traitement de texte et génération de rapports
+
+## Arborescence
 
 
+├── README.md
+├── bin
+│   └── autosecguard.sh
+├── src
+│   ├── interface
+│   │   ├── interactive.sh
+│   │   └── logging.sh
+│   ├── modes
+│   │   └── modes_exe.sh
+│   ├── performance
+│   │   ├── process_manager.sh
+│   │   └── resources_monitor.sh
+│   └── security
+│       ├── hash_check.sh
+│       ├── restore.sh
+│       ├── scan_active.sh
+│       └── surveillance.sh
+└── var
+    ├── backups
+    │   ├── auth.log.20250601_140803.bak
+    │   ├── passwd.20250601_140803.bak
+    │   └── process_snapshots
+    │      
+    │      
+    ├── checksums
+    │   ├── auth.log.sha256
+    │   ├── history.log.sha256
+    │   ├── passwd.sha256
+    │   └── shadow.sha256
+    ├── log
+    │   └── history.log
+    ├── reports
+    │   └── integrity_report.csv
+    └── stop_signal
 
-- Membre 1 - Sécurité & Surveillance :
-- Ajouter un mode intelligent qui détecte non seulement les modifications, mais aussi les accès  anormaux basés sur l’historique.
-- Implémenter un hashing automatique des fichiers sensibles pour vérifier leur intégrité.
+## Auteur
 
-- Membre 2 - Gestion de Processus & Performance :
-- Ajouter une option interactive qui affiche un état en temps réel de l’utilisation CPU/RAM.
-- Optimiser la gestion des processus lourds avec un mécanisme d’auto-ajustement des priorités.
+**Team-A01**  
+[ENSET Mohammedia – 2025](https://enset-media.ac.ma/)
 
-- Membre 3 - Interface, Log & Documentation :
-- Ajouter une option de visualisation des logs sous forme structurée (exemple : affichage filtré par date/type d’erreur).
-- Rendre l’aide -h plus dynamique avec des sous-sections pour une meilleure lisibilité.
+---
 
+© 2025 AutoSecGuard – Tous droits réservés.

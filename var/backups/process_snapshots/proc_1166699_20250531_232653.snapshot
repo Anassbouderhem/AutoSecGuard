@@ -1,0 +1,2 @@
+    PID    PPID USER     %CPU %MEM    VSZ   RSS CMD
+1166699 1166696 root      8.4  0.0   4884  3584 /bin/bash /home/anass/AutoSecGuard/src/performance/resources_monitor.sh -g high

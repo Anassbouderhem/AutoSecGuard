@@ -1,0 +1,445 @@
+2025-06-01T00:03:56.853931+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:03:59.511011+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/7 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:03:59.512060+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:03:59.535958+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:04:22.826612+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/7 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:04:22.827480+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:04:22.845744+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:04:34.320466+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/7 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:04:34.327358+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:04:34.349610+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:05:01.488435+02:00 LAPTOP-11IJD1K4 CRON[3464569]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T00:05:01.490212+02:00 LAPTOP-11IJD1K4 CRON[3464569]: pam_unix(cron:session): session closed for user root
+2025-06-01T00:05:40.050767+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/7 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=/usr/bin/chmod +x /home/anass/AutoSecGuard/src/interface/interactive.sh
+2025-06-01T00:05:40.052368+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:05:40.055759+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:05:42.230726+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/7 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:05:42.231251+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:10:02.602202+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/9 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:10:02.605961+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:12:28.950174+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/11 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:12:28.950659+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:12:28.974971+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:15:01.498370+02:00 LAPTOP-11IJD1K4 CRON[4021367]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T00:15:01.500209+02:00 LAPTOP-11IJD1K4 CRON[4021367]: pam_unix(cron:session): session closed for user root
+2025-06-01T00:17:01.502747+02:00 LAPTOP-11IJD1K4 CRON[4135255]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T00:17:01.509651+02:00 LAPTOP-11IJD1K4 CRON[4135255]: pam_unix(cron:session): session closed for user root
+2025-06-01T00:25:01.518336+02:00 LAPTOP-11IJD1K4 CRON[374894]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T00:25:01.520181+02:00 LAPTOP-11IJD1K4 CRON[374894]: pam_unix(cron:session): session closed for user root
+2025-06-01T00:27:24.244204+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/11 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:27:24.251716+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:27:24.266307+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:28:29.469560+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/11 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:28:29.470239+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:35:01.525994+02:00 LAPTOP-11IJD1K4 CRON[1148447]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T00:35:01.528791+02:00 LAPTOP-11IJD1K4 CRON[1148447]: pam_unix(cron:session): session closed for user root
+2025-06-01T00:35:45.184868+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:35:47.248745+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/11 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:35:47.249371+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:37:52.285522+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:37:54.465237+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/11 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:37:54.466177+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:39:15.089926+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:39:18.176863+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/11 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:39:18.177899+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:39:43.806325+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:39:46.079572+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/11 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:39:46.080472+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:40:14.262502+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:42:13.379694+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/11 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:42:13.380510+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:42:43.063195+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:42:45.220042+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/11 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:42:45.220681+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:43:01.354831+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:43:01.382128+02:00 LAPTOP-11IJD1K4 sudo: message repeated 2 times: [ pam_unix(sudo:session): session closed for user root]
+2025-06-01T00:45:01.533024+02:00 LAPTOP-11IJD1K4 CRON[1805278]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T00:45:01.534855+02:00 LAPTOP-11IJD1K4 CRON[1805278]: pam_unix(cron:session): session closed for user root
+2025-06-01T00:48:08.950161+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/5 ruser=anass rhost=  user=anass
+2025-06-01T00:48:16.084499+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:auth): conversation failed
+2025-06-01T00:48:16.085198+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:auth): auth could not identify password for [anass]
+2025-06-01T00:48:16.085477+02:00 LAPTOP-11IJD1K4 sudo:    anass : 1 incorrect password attempt ; TTY=pts/5 ; PWD=/home/anass/AutoSecGuard ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:48:26.915489+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/5 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:48:26.916333+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:50:20.885317+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:50:22.702460+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/5 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:50:22.703095+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:50:34.204205+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:53:53.038075+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/5 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:53:53.038959+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:54:30.784987+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:55:01.544727+02:00 LAPTOP-11IJD1K4 CRON[2445681]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T00:55:01.546468+02:00 LAPTOP-11IJD1K4 CRON[2445681]: pam_unix(cron:session): session closed for user root
+2025-06-01T00:57:29.221520+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/5 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:57:29.222575+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:57:43.816723+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:57:45.702473+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/5 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:57:45.703291+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:58:09.610096+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:58:10.961560+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/5 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:58:10.962615+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T00:59:19.650675+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T00:59:21.122307+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/5 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T00:59:21.124160+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T01:01:51.731443+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:auth): conversation failed
+2025-06-01T01:01:51.734691+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:auth): auth could not identify password for [anass]
+2025-06-01T01:02:03.937821+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/9 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T01:02:03.939516+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T01:04:38.398511+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T01:04:40.162481+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/9 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T01:04:40.163106+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T01:04:58.366515+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T01:05:01.551809+02:00 LAPTOP-11IJD1K4 CRON[3001887]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T01:05:01.553929+02:00 LAPTOP-11IJD1K4 CRON[3001887]: pam_unix(cron:session): session closed for user root
+2025-06-01T01:05:02.278744+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/9 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T01:05:02.283291+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T01:08:06.575966+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T01:08:08.868721+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/9 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T01:08:08.869446+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T01:11:09.825715+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T01:11:12.300610+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/9 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T01:11:12.301464+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T01:14:22.801041+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T01:14:24.774338+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/9 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T01:14:24.774987+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T01:15:01.558316+02:00 LAPTOP-11IJD1K4 CRON[3664682]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T01:15:01.560276+02:00 LAPTOP-11IJD1K4 CRON[3664682]: pam_unix(cron:session): session closed for user root
+2025-06-01T01:15:48.395148+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T01:17:01.562997+02:00 LAPTOP-11IJD1K4 CRON[3781377]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T01:17:01.566784+02:00 LAPTOP-11IJD1K4 CRON[3781377]: pam_unix(cron:session): session closed for user root
+2025-06-01T01:22:13.310607+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/9 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T01:22:13.313396+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T01:25:01.572582+02:00 LAPTOP-11IJD1K4 CRON[89979]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T01:25:01.575009+02:00 LAPTOP-11IJD1K4 CRON[89979]: pam_unix(cron:session): session closed for user root
+2025-06-01T01:58:33.614102+02:00 LAPTOP-11IJD1K4 login[213]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-06-01T01:58:33.614106+02:00 LAPTOP-11IJD1K4 login[213]: PAM adding faulty module: pam_lastlog.so
+2025-06-01T01:58:34.303668+02:00 LAPTOP-11IJD1K4 systemd-logind[247]: New seat seat0.
+2025-06-01T01:58:34.617585+02:00 LAPTOP-11IJD1K4 login[213]: pam_unix(login:session): session opened for user anass(uid=1000) by anass(uid=0)
+2025-06-01T01:58:34.746180+02:00 LAPTOP-11IJD1K4 systemd-logind[247]: New session 1 of user anass.
+2025-06-01T01:58:34.855615+02:00 LAPTOP-11IJD1K4 (systemd): pam_unix(systemd-user:session): session opened for user anass(uid=1000) by anass(uid=0)
+2025-06-01T02:02:33.553255+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/4 ruser=anass rhost=  user=anass
+2025-06-01T02:02:44.107687+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard ; USER=root ; COMMAND=/usr/bin/rmdir /bin/var
+2025-06-01T02:02:44.108442+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:02:44.114714+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:03:14.593231+02:00 LAPTOP-11IJD1K4 su[2093]: (to root) anass on pts/4
+2025-06-01T02:03:14.593590+02:00 LAPTOP-11IJD1K4 su[2093]: pam_unix(su:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:03:14.614548+02:00 LAPTOP-11IJD1K4 systemd-logind[247]: New session c1 of user root.
+2025-06-01T02:03:14.624963+02:00 LAPTOP-11IJD1K4 (systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T02:03:42.230383+02:00 LAPTOP-11IJD1K4 su[2093]: pam_unix(su:session): session closed for user root
+2025-06-01T02:03:42.233947+02:00 LAPTOP-11IJD1K4 systemd-logind[247]: Session c1 logged out. Waiting for processes to exit.
+2025-06-01T02:03:42.234784+02:00 LAPTOP-11IJD1K4 systemd-logind[247]: Removed session c1.
+2025-06-01T02:05:01.569053+02:00 LAPTOP-11IJD1K4 CRON[2562]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T02:05:01.572609+02:00 LAPTOP-11IJD1K4 CRON[2562]: pam_unix(cron:session): session closed for user root
+2025-06-01T02:09:10.890199+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T02:09:10.896668+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:15:01.595625+02:00 LAPTOP-11IJD1K4 CRON[4465]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T02:15:01.598940+02:00 LAPTOP-11IJD1K4 CRON[4465]: pam_unix(cron:session): session closed for user root
+2025-06-01T02:17:01.601816+02:00 LAPTOP-11IJD1K4 CRON[4824]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T02:17:01.606445+02:00 LAPTOP-11IJD1K4 CRON[4824]: pam_unix(cron:session): session closed for user root
+2025-06-01T02:17:50.602872+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:17:52.761299+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T02:17:52.762149+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:17:52.791424+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:18:11.598351+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T02:18:11.598902+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:18:13.613567+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:25:01.619039+02:00 LAPTOP-11IJD1K4 CRON[6406]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T02:25:01.623336+02:00 LAPTOP-11IJD1K4 CRON[6406]: pam_unix(cron:session): session closed for user root
+2025-06-01T02:27:52.388889+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T02:27:52.392108+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:28:38.684109+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:28:43.855081+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T02:28:43.858524+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:35:01.632055+02:00 LAPTOP-11IJD1K4 CRON[27959]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T02:35:01.634945+02:00 LAPTOP-11IJD1K4 CRON[27959]: pam_unix(cron:session): session closed for user root
+2025-06-01T02:40:28.305469+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:40:30.856714+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T02:40:30.859383+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:45:01.191855+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:45:01.649824+02:00 LAPTOP-11IJD1K4 CRON[30489]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T02:45:01.654027+02:00 LAPTOP-11IJD1K4 CRON[30489]: pam_unix(cron:session): session closed for user root
+2025-06-01T02:45:02.895057+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T02:45:02.895822+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:45:12.596973+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:45:53.061123+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T02:45:53.061708+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:46:43.266875+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:47:22.037766+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --cpu-seuil 90 --auto --action kill
+2025-06-01T02:47:22.038316+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:47:22.064446+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:48:13.739461+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --cpu-seuil 90 --auto --action kill
+2025-06-01T02:48:13.740041+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:48:13.764428+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:50:28.513509+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --cpu-seuil 90 --auto --action kill
+2025-06-01T02:50:28.516969+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:50:28.537683+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:50:59.749573+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --cpu-seuil 90 --auto --action kill
+2025-06-01T02:50:59.752018+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:50:59.778805+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:51:30.496507+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --cpu-seuil 90 --auto --action kill
+2025-06-01T02:51:30.497229+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:51:30.520554+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:52:36.565726+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --cpu-seuil 90 --auto --action kill
+2025-06-01T02:52:36.567206+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:52:36.590706+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:54:06.223233+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --cpu-seuil 90 --auto --action kill
+2025-06-01T02:54:06.229819+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:54:06.248475+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:54:49.305446+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --cpu-seuil 90 --auto --action kill --f
+2025-06-01T02:54:49.305886+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:54:49.328181+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:54:52.769144+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --cpu-seuil 90 --auto --action kill -f
+2025-06-01T02:54:52.769717+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:54:52.798588+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:55:01.661531+02:00 LAPTOP-11IJD1K4 CRON[33146]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T02:55:01.664768+02:00 LAPTOP-11IJD1K4 CRON[33146]: pam_unix(cron:session): session closed for user root
+2025-06-01T02:56:39.000999+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh -f --performance --cpu-seuil 90 --auto --action kill
+2025-06-01T02:56:39.001589+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:56:39.029657+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:56:55.090504+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --fork --performance --cpu-seuil 90 --auto --action kill
+2025-06-01T02:56:55.090785+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:56:55.118683+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T02:57:05.683483+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --fork -sec
+2025-06-01T02:57:05.684217+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T02:57:31.006242+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T03:02:18.362652+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --fork --performance --cpu-seuil 90 --auto --action kill
+2025-06-01T03:02:18.364717+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T03:02:18.418413+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T03:02:43.982567+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --fork --performance --cpu-seuil 90 --auto --action kill
+2025-06-01T03:02:43.983674+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T03:02:44.038536+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T03:03:28.418220+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh -k
+2025-06-01T03:03:28.419118+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T03:03:36.494644+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T03:03:51.108443+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --kill
+2025-06-01T03:03:51.115020+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T03:05:01.698403+02:00 LAPTOP-11IJD1K4 CRON[37685]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T03:05:01.701111+02:00 LAPTOP-11IJD1K4 CRON[37685]: pam_unix(cron:session): session closed for user root
+2025-06-01T03:05:42.892174+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T03:05:44.695891+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=/usr/bin/pkill -f resources_monitor.sh
+2025-06-01T03:05:44.696364+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T03:05:44.707421+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T03:05:44.713132+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=/usr/bin/pkill -f process_manager.sh
+2025-06-01T03:05:44.713581+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T03:05:44.717326+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T09:36:30.604199+02:00 LAPTOP-11IJD1K4 systemd-logind[185]: New seat seat0.
+2025-06-01T09:36:32.976222+02:00 LAPTOP-11IJD1K4 login[352]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-06-01T09:36:32.976404+02:00 LAPTOP-11IJD1K4 login[352]: PAM adding faulty module: pam_lastlog.so
+2025-06-01T09:36:33.732186+02:00 LAPTOP-11IJD1K4 login[352]: pam_unix(login:session): session opened for user anass(uid=1000) by anass(uid=0)
+2025-06-01T09:36:33.740615+02:00 LAPTOP-11IJD1K4 systemd-logind[185]: New session 1 of user anass.
+2025-06-01T09:36:33.769189+02:00 LAPTOP-11IJD1K4 (systemd): pam_unix(systemd-user:session): session opened for user anass(uid=1000) by anass(uid=0)
+2025-06-01T09:44:16.120761+02:00 LAPTOP-11IJD1K4 su[1930]: (to root) anass on pts/4
+2025-06-01T09:44:16.121969+02:00 LAPTOP-11IJD1K4 su[1930]: pam_unix(su:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T09:44:16.241242+02:00 LAPTOP-11IJD1K4 systemd-logind[185]: New session c1 of user root.
+2025-06-01T09:44:16.335965+02:00 LAPTOP-11IJD1K4 (systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T09:44:29.783399+02:00 LAPTOP-11IJD1K4 sudo:     root : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh -t --performance --cpu-seuil 90 --ram-seuil 75 --granularity high
+2025-06-01T09:44:29.785932+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2025-06-01T09:44:29.922395+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T09:45:01.501730+02:00 LAPTOP-11IJD1K4 CRON[2245]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T09:45:01.510284+02:00 LAPTOP-11IJD1K4 CRON[2245]: pam_unix(cron:session): session closed for user root
+2025-06-01T09:46:38.730145+02:00 LAPTOP-11IJD1K4 sudo:     root : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh -t --performance --cpu-seuil 90 --ram-seuil 75 --granularity high
+2025-06-01T09:46:38.731117+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2025-06-01T09:46:38.792612+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T09:49:30.658714+02:00 LAPTOP-11IJD1K4 sudo:     root : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh -t --performance --cpu-seuil 90 --ram-seuil 75 --granularity high
+2025-06-01T09:49:30.662982+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2025-06-01T09:49:30.746351+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T09:50:26.408360+02:00 LAPTOP-11IJD1K4 sudo:     root : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh -t --performance --cpu-seuil 90 --ram-seuil 75 --granularity high
+2025-06-01T09:50:26.415900+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2025-06-01T09:50:26.524002+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T09:55:01.615935+02:00 LAPTOP-11IJD1K4 CRON[5251]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T09:55:01.620893+02:00 LAPTOP-11IJD1K4 CRON[5251]: pam_unix(cron:session): session closed for user root
+2025-06-01T09:58:48.777593+02:00 LAPTOP-11IJD1K4 su[1930]: pam_unix(su:session): session closed for user root
+2025-06-01T09:58:48.802070+02:00 LAPTOP-11IJD1K4 systemd-logind[185]: Session c1 logged out. Waiting for processes to exit.
+2025-06-01T10:00:00.717373+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:auth): conversation failed
+2025-06-01T10:00:00.720419+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:auth): auth could not identify password for [anass]
+2025-06-01T10:00:27.536597+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/6 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh performance --cpu-seuil 60 --ram-seuil 60 --action renice --no-monitor
+2025-06-01T10:00:27.543790+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:00:27.599873+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:02:56.697647+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/6 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --cpu-seuil 90 --granularity high
+2025-06-01T10:02:56.703564+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:02:56.807275+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:05:01.747073+02:00 LAPTOP-11IJD1K4 CRON[9218]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T10:05:01.755004+02:00 LAPTOP-11IJD1K4 CRON[9218]: pam_unix(cron:session): session closed for user root
+2025-06-01T10:07:13.820125+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/6 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --auto -c 85 -r 60 -g medium -a kill --refresh 10
+2025-06-01T10:07:13.828012+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:07:13.893743+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:07:26.585150+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/6 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --auto -c 85 -r 60 -a kill --refresh 10
+2025-06-01T10:07:26.586932+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:07:26.699282+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:07:50.100552+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/6 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh -k
+2025-06-01T10:07:50.102190+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:07:54.497208+02:00 LAPTOP-11IJD1K4 systemd-logind[185]: Removed session c1.
+2025-06-01T10:12:59.381744+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:13:03.598155+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/6 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh
+2025-06-01T10:13:03.600158+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:13:09.314707+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:13:27.114016+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/6 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --perfomance
+2025-06-01T10:13:27.115008+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:13:27.144797+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:13:45.389975+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/6 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh -p
+2025-06-01T10:13:45.390520+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:14:21.948671+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:14:34.255713+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/6 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh -p --auto
+2025-06-01T10:14:34.256403+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:14:34.316055+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:15:01.761785+02:00 LAPTOP-11IJD1K4 CRON[336338]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T10:15:01.764651+02:00 LAPTOP-11IJD1K4 CRON[336338]: pam_unix(cron:session): session closed for user root
+2025-06-01T10:15:28.723752+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/6 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh -k 313841
+2025-06-01T10:15:28.725720+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:15:33.334572+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:15:57.355887+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/6 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh -k 313841
+2025-06-01T10:15:57.358488+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:16:03.533063+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:16:07.835269+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/6 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh -k
+2025-06-01T10:16:07.836445+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:17:01.770644+02:00 LAPTOP-11IJD1K4 CRON[434627]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T10:17:01.865111+02:00 LAPTOP-11IJD1K4 CRON[434627]: pam_unix(cron:session): session closed for user root
+2025-06-01T10:18:50.259825+02:00 LAPTOP-11IJD1K4 systemd-logind[187]: New seat seat0.
+2025-06-01T10:18:52.643227+02:00 LAPTOP-11IJD1K4 login[360]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-06-01T10:18:52.643393+02:00 LAPTOP-11IJD1K4 login[360]: PAM adding faulty module: pam_lastlog.so
+2025-06-01T10:18:53.301452+02:00 LAPTOP-11IJD1K4 login[360]: pam_unix(login:session): session opened for user anass(uid=1000) by anass(uid=0)
+2025-06-01T10:18:53.319261+02:00 LAPTOP-11IJD1K4 systemd-logind[187]: New session 1 of user anass.
+2025-06-01T10:18:53.355448+02:00 LAPTOP-11IJD1K4 (systemd): pam_unix(systemd-user:session): session opened for user anass(uid=1000) by anass(uid=0)
+2025-06-01T10:25:01.163816+02:00 LAPTOP-11IJD1K4 CRON[1762]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T10:25:01.172215+02:00 LAPTOP-11IJD1K4 CRON[1762]: pam_unix(cron:session): session closed for user root
+2025-06-01T10:27:35.108857+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --cpu-seuil 90 --ram-seuil 60 --auto --action kill
+2025-06-01T10:27:35.110345+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:28:27.438609+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:29:28.673394+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --no-monitor --cpu-seuil 85 --auto
+2025-06-01T10:29:28.755885+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:30:09.595253+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:30:31.578237+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --no-manager --cpu-seuil 85 --auto
+2025-06-01T10:30:31.579538+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:32:48.513701+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:34:57.130525+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --no-manager --cpu-seuil 85 --auto
+2025-06-01T10:34:57.215174+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:34:57.286750+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:35:01.179305+02:00 LAPTOP-11IJD1K4 CRON[125328]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T10:35:01.181384+02:00 LAPTOP-11IJD1K4 CRON[125328]: pam_unix(cron:session): session closed for user root
+2025-06-01T10:35:27.270510+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --kill
+2025-06-01T10:35:27.272649+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:38:28.935087+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:39:02.366429+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=/usr/bin/kill -9 122243
+2025-06-01T10:39:02.447380+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:39:02.447631+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:39:07.910216+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=/usr/bin/kill -9 122244
+2025-06-01T10:39:07.911381+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:39:07.914090+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:43:33.090178+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --no-manager --cpu-seuil 85 --auto
+2025-06-01T10:43:33.091050+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:43:33.104265+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:45:01.189349+02:00 LAPTOP-11IJD1K4 CRON[487275]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T10:45:01.194332+02:00 LAPTOP-11IJD1K4 CRON[487275]: pam_unix(cron:session): session closed for user root
+2025-06-01T10:46:11.852054+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --no-manager --cpu-seuil 85 --auto
+2025-06-01T10:46:11.935593+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:46:11.935850+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:46:40.177052+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --stop
+2025-06-01T10:46:40.177997+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:46:40.228930+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:47:40.422996+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance
+2025-06-01T10:47:40.424759+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:48:54.291780+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:49:50.500076+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --no-manager --auto
+2025-06-01T10:49:50.587794+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:49:50.589444+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:50:08.853081+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --no-managcr --auto
+2025-06-01T10:50:08.855318+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:50:08.933864+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:50:24.841430+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --stop
+2025-06-01T10:50:24.842236+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:50:24.889986+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:52:50.349244+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --no-manager --auto
+2025-06-01T10:52:50.351770+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:52:50.408966+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:54:33.538257+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --stop
+2025-06-01T10:54:33.621765+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:54:33.626328+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:55:01.201808+02:00 LAPTOP-11IJD1K4 CRON[1511020]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T10:55:01.207014+02:00 LAPTOP-11IJD1K4 CRON[1511020]: pam_unix(cron:session): session closed for user root
+2025-06-01T10:55:42.020488+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance
+2025-06-01T10:55:42.022681+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:56:07.011565+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T10:56:32.321040+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --timeout 300
+2025-06-01T10:56:32.323485+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T10:57:46.189244+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T11:05:01.216769+02:00 LAPTOP-11IJD1K4 CRON[2922398]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T11:05:01.225254+02:00 LAPTOP-11IJD1K4 CRON[2922398]: pam_unix(cron:session): session closed for user root
+2025-06-01T11:05:06.270909+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --auto --timeout 15
+2025-06-01T11:05:06.276617+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T11:05:06.389673+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T11:07:31.209932+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --stop
+2025-06-01T11:07:31.218620+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T11:07:31.280456+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T11:10:02.120281+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --auto
+2025-06-01T11:10:02.145099+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T11:10:02.241998+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T11:10:18.062552+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --stop
+2025-06-01T11:10:18.065904+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T11:10:18.153614+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T11:15:01.234237+02:00 LAPTOP-11IJD1K4 CRON[261234]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T11:15:01.244092+02:00 LAPTOP-11IJD1K4 CRON[261234]: pam_unix(cron:session): session closed for user root
+2025-06-01T11:16:59.995774+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --performance --auto
+2025-06-01T11:17:00.000163+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T11:17:00.112845+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T11:17:01.256856+02:00 LAPTOP-11IJD1K4 CRON[591161]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T11:17:01.280329+02:00 LAPTOP-11IJD1K4 CRON[591161]: pam_unix(cron:session): session closed for user root
+2025-06-01T11:18:54.954773+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --stop
+2025-06-01T11:18:55.039232+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T11:18:55.039620+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T11:22:47.097418+02:00 LAPTOP-11IJD1K4 su[1549654]: (to root) anass on pts/4
+2025-06-01T11:22:47.100177+02:00 LAPTOP-11IJD1K4 su[1549654]: pam_unix(su:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T11:22:47.166058+02:00 LAPTOP-11IJD1K4 systemd-logind[187]: New session c1 of user root.
+2025-06-01T11:22:47.257284+02:00 LAPTOP-11IJD1K4 (systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T11:25:01.286404+02:00 LAPTOP-11IJD1K4 CRON[1952423]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T11:25:01.293437+02:00 LAPTOP-11IJD1K4 CRON[1952423]: pam_unix(cron:session): session closed for user root
+2025-06-01T11:25:39.345764+02:00 LAPTOP-11IJD1K4 sudo:     root : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh -stop
+2025-06-01T11:25:39.346957+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2025-06-01T11:25:39.409123+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T11:25:45.231135+02:00 LAPTOP-11IJD1K4 sudo:     root : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh --stop
+2025-06-01T11:25:45.231515+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2025-06-01T11:25:45.275672+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T11:29:18.198635+02:00 LAPTOP-11IJD1K4 sudo:     root : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=/usr/bin/git add .
+2025-06-01T11:29:18.199884+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2025-06-01T11:29:18.205308+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T11:29:23.616594+02:00 LAPTOP-11IJD1K4 su[1549654]: pam_unix(su:session): session closed for user root
+2025-06-01T11:29:23.704599+02:00 LAPTOP-11IJD1K4 systemd-logind[187]: Session c1 logged out. Waiting for processes to exit.
+2025-06-01T11:35:01.301075+02:00 LAPTOP-11IJD1K4 CRON[3715150]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T11:35:01.306380+02:00 LAPTOP-11IJD1K4 CRON[3715150]: pam_unix(cron:session): session closed for user root
+2025-06-01T12:15:26.869908+02:00 LAPTOP-11IJD1K4 systemd-logind[190]: New seat seat0.
+2025-06-01T12:15:28.967271+02:00 LAPTOP-11IJD1K4 login[353]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-06-01T12:15:28.967416+02:00 LAPTOP-11IJD1K4 login[353]: PAM adding faulty module: pam_lastlog.so
+2025-06-01T12:15:29.531035+02:00 LAPTOP-11IJD1K4 login[353]: pam_unix(login:session): session opened for user anass(uid=1000) by anass(uid=0)
+2025-06-01T12:15:29.542829+02:00 LAPTOP-11IJD1K4 systemd-logind[190]: New session 1 of user anass.
+2025-06-01T12:15:29.560970+02:00 LAPTOP-11IJD1K4 (systemd): pam_unix(systemd-user:session): session opened for user anass(uid=1000) by anass(uid=0)
+2025-06-01T12:17:01.765013+02:00 LAPTOP-11IJD1K4 CRON[918]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T12:17:01.769193+02:00 LAPTOP-11IJD1K4 CRON[918]: pam_unix(cron:session): session closed for user root
+2025-06-01T12:25:01.788293+02:00 LAPTOP-11IJD1K4 CRON[2326]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T12:25:01.872122+02:00 LAPTOP-11IJD1K4 CRON[2326]: pam_unix(cron:session): session closed for user root
+2025-06-01T12:35:01.999989+02:00 LAPTOP-11IJD1K4 CRON[4073]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T12:35:02.009432+02:00 LAPTOP-11IJD1K4 CRON[4073]: pam_unix(cron:session): session closed for user root
+2025-06-01T12:45:01.021590+02:00 LAPTOP-11IJD1K4 CRON[5950]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T12:45:01.025763+02:00 LAPTOP-11IJD1K4 CRON[5950]: pam_unix(cron:session): session closed for user root
+2025-06-01T12:50:37.410461+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh -l /home/anass/meslogs -f --security
+2025-06-01T12:50:37.418149+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T12:50:37.483161+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T12:53:23.557860+02:00 LAPTOP-11IJD1K4 sudo:    anass : TTY=pts/4 ; PWD=/home/anass/AutoSecGuard/bin ; USER=root ; COMMAND=./autosecguard.sh -l /home/anass/meslogs -f --security
+2025-06-01T12:53:23.559708+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2025-06-01T12:53:49.147933+02:00 LAPTOP-11IJD1K4 sudo: pam_unix(sudo:session): session closed for user root
+2025-06-01T12:55:01.035816+02:00 LAPTOP-11IJD1K4 CRON[8501]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T12:55:01.038987+02:00 LAPTOP-11IJD1K4 CRON[8501]: pam_unix(cron:session): session closed for user root
+2025-06-01T13:05:01.067424+02:00 LAPTOP-11IJD1K4 CRON[10384]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T13:05:01.070033+02:00 LAPTOP-11IJD1K4 CRON[10384]: pam_unix(cron:session): session closed for user root
+2025-06-01T13:15:01.085077+02:00 LAPTOP-11IJD1K4 CRON[12284]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T13:15:01.087540+02:00 LAPTOP-11IJD1K4 CRON[12284]: pam_unix(cron:session): session closed for user root
+2025-06-01T13:17:01.115174+02:00 LAPTOP-11IJD1K4 CRON[12638]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T13:17:01.119889+02:00 LAPTOP-11IJD1K4 CRON[12638]: pam_unix(cron:session): session closed for user root
+2025-06-01T13:25:01.141074+02:00 LAPTOP-11IJD1K4 CRON[14191]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T13:25:01.143845+02:00 LAPTOP-11IJD1K4 CRON[14191]: pam_unix(cron:session): session closed for user root
+2025-06-01T13:35:01.155288+02:00 LAPTOP-11IJD1K4 CRON[32283]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T13:35:01.157229+02:00 LAPTOP-11IJD1K4 CRON[32283]: pam_unix(cron:session): session closed for user root
+2025-06-01T13:45:01.184034+02:00 LAPTOP-11IJD1K4 CRON[34237]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T13:45:01.187754+02:00 LAPTOP-11IJD1K4 CRON[34237]: pam_unix(cron:session): session closed for user root
+2025-06-01T13:55:01.215996+02:00 LAPTOP-11IJD1K4 CRON[36576]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T13:55:01.219251+02:00 LAPTOP-11IJD1K4 CRON[36576]: pam_unix(cron:session): session closed for user root
+2025-06-01T14:05:01.238219+02:00 LAPTOP-11IJD1K4 CRON[38714]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-06-01T14:05:01.240858+02:00 LAPTOP-11IJD1K4 CRON[38714]: pam_unix(cron:session): session closed for user root
