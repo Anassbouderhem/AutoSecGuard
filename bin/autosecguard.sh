@@ -240,7 +240,7 @@ parse_arguments() {
     local feature_set=false
     manage_pid check || exit 1
 
-    # Prétraitement des options globales (dont -l)
+    # Prétraitement des options globales
     while [[ $# -gt 0 ]]; do
         case "$1" in
             -f|--fork) mode="mode_fork"; shift ;;
@@ -304,6 +304,11 @@ parse_arguments() {
     done
 
     if ! $feature_set; then
+        # lancer le mode interactif
+        if [[ $# -eq 0 ]]; then
+            interactive_mode
+            exit 0
+        fi
         log "ERROR" "Aucune fonctionnalité sélectionnée"
         show_help
         exit 1
